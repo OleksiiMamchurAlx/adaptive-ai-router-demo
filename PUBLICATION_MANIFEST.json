@@ -5,6 +5,16 @@
   "self_hash_location": "Detached publication-control manifest retained by project owner",
   "files": [
     {
+      "path": ".gitattributes",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "size_bytes": 19,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "CONTENT_REVIEWED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
       "path": ".gitignore",
       "sha256": "4252cf8bcc263450ab2ee6a0fa6d3620363b9e027d99eb1d6a7d95e23c6441cb",
       "size_bytes": 80,
@@ -66,7 +76,7 @@
     },
     {
       "path": "evidence/unit-tests.txt",
-      "sha256": "66e226c05ce51d797c6fb60e74c930581350dc1d89ed783ff846d5c352554038",
+      "sha256": "f3a6120ab0a3a0b9c4c1130e0cc2fe5215f488ef754e2f6f1aadbc44c4bbe2cb",
       "size_bytes": 1825,
       "source_artifact": "FRESH-PUBLIC-COPY-TEST-20260916",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
@@ -76,7 +86,7 @@
     },
     {
       "path": "evidence/verification.json",
-      "sha256": "381f0941bc8772d70d89b39bfc08b6c37e0c00329a4a1d051810770b71e81b57",
+      "sha256": "d27e11de24b333a308e087d6bd15716d6e43213fbd0b368cf130aabb37c205d3",
       "size_bytes": 1010,
       "source_artifact": "FRESH-PUBLIC-COPY-TEST-20260916",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
