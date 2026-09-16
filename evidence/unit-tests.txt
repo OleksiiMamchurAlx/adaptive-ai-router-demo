@@ -1,0 +1,25 @@
+test_crash_and_two_resumes (test_demo.DemoTests.test_crash_and_two_resumes) ... ok
+test_existing_directory_not_overwritten (test_demo.DemoTests.test_existing_directory_not_overwritten) ... ok
+test_missing_job_not_created (test_demo.DemoTests.test_missing_job_not_created) ... ok
+test_uncertain_state_stops (test_demo.DemoTests.test_uncertain_state_stops) ... ok
+test_backup_restore (test_evidence.EvidenceTests.test_backup_restore) ... ok
+test_bad_frame_data (test_evidence.EvidenceTests.test_bad_frame_data) ... ok
+test_consent_is_not_router_grant (test_evidence.EvidenceTests.test_consent_is_not_router_grant) ... ok
+test_duplicate_event (test_evidence.EvidenceTests.test_duplicate_event) ... ok
+test_error_cannot_be_false_feedback (test_evidence.EvidenceTests.test_error_cannot_be_false_feedback) ... ok
+test_error_is_unknown (test_evidence.EvidenceTests.test_error_is_unknown) ... ok
+test_false_accept_blocked (test_evidence.EvidenceTests.test_false_accept_blocked) ... ok
+test_frame_math (test_evidence.EvidenceTests.test_frame_math) ... ok
+test_missing_metric_null (test_evidence.EvidenceTests.test_missing_metric_null) ... ok
+test_null_accept_blocked (test_evidence.EvidenceTests.test_null_accept_blocked) ... ok
+test_null_reject_blocked (test_evidence.EvidenceTests.test_null_reject_blocked) ... ok
+test_one_percent_low (test_evidence.EvidenceTests.test_one_percent_low) ... ok
+test_orphan_validation (test_evidence.EvidenceTests.test_orphan_validation) ... ok
+test_rejection_is_false (test_evidence.EvidenceTests.test_rejection_is_false) ... ok
+test_repeatable_export (test_evidence.EvidenceTests.test_repeatable_export) ... ok
+test_transaction_rollback (test_evidence.EvidenceTests.test_transaction_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.210s
+
+OK

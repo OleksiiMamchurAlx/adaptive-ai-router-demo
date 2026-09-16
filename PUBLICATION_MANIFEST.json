@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "repository": "adaptive-ai-router-demo",
+  "excludes_self": true,
+  "self_hash_location": "Detached publication-control manifest retained by project owner",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "4252cf8bcc263450ab2ee6a0fa6d3620363b9e027d99eb1d6a7d95e23c6441cb",
+      "size_bytes": 80,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "CONTENT_REVIEWED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "526d9df2a21f2157ab033939a5b1fa69b2e4a8e2b6969f62d5a92aa2a00da77d",
+      "size_bytes": 499,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "CONTENT_REVIEWED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "demo.py",
+      "sha256": "15005518b398d239ee4fd38647fa9fff58937b791d7d904ecf1716e463221e11",
+      "size_bytes": 4072,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "docs/EVIDENCE_BOUNDARIES.md",
+      "sha256": "1e1c3a74ab6ae528f080a2e8db9adf7cf94a851b752670710e8f159e331492e3",
+      "size_bytes": 1618,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "CONTENT_REVIEWED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "docs/SYSTEMS_DIAGNOSTICS.md",
+      "sha256": "6d418975fc07057586608eb3e45661c7c86041adf05ebeaf1be932be98e9e922",
+      "size_bytes": 1772,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "CONTENT_REVIEWED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "evidence/prior-recovery.json",
+      "sha256": "d1bce0ef226af7f7fa31899f2d5413273bedd82002b63b794bb3b041ff327ec8",
+      "size_bytes": 570,
+      "source_artifact": "LOCAL-HANDOFF/router-demo",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "evidence/unit-tests.txt",
+      "sha256": "a098d0bfbc718b25f11e76f5fc9cc94201c5212f3d975af5500b83384dbda391",
+      "size_bytes": 1850,
+      "source_artifact": "FRESH-PUBLIC-COPY-TEST-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "evidence/verification.json",
+      "sha256": "5de026940e53436c73e743275261167fb71fdc00dd5d69d479408f06f39ebe88",
+      "size_bytes": 1039,
+      "source_artifact": "FRESH-PUBLIC-COPY-TEST-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "evidence.py",
+      "sha256": "9720f6b1a3e864ea9cd4732e0b8f54fdc2c69920d4d89100bfe0763ad6f4c513",
+      "size_bytes": 4987,
+      "source_artifact": "LOCAL-HANDOFF/evidence-library",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "README.md",
+      "sha256": "078fc2809ba9da3e4df96ee04b6dbb949f8978d6540f5a1ab85a87ffa11ce7e5",
+      "size_bytes": 4565,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "CONTENT_REVIEWED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "RIGHTS_AND_ATTRIBUTION.md",
+      "sha256": "17de8c0616bd553d601d072c51790c5cdca64196d8890a9a4e1935d000d88323",
+      "size_bytes": 974,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "CONTENT_REVIEWED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "schema.sql",
+      "sha256": "a8dbd4920b63178413b68d2171179b6938b8f998477ad0f38700cb9d8512d303",
+      "size_bytes": 2011,
+      "source_artifact": "LOCAL-HANDOFF/evidence-library",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "CONTENT_REVIEWED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "test_demo.py",
+      "sha256": "0602867fc9d976f12d58830f1e8ec0784acf1bd1f2e861ec37d51030792ae889",
+      "size_bytes": 1521,
+      "source_artifact": "NEW-PUBLICATION-20260916",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    },
+    {
+      "path": "test_evidence.py",
+      "sha256": "3dd717d816bada7421b47157deeacdb6b7859eb843a4e707606e1066cce2ace5",
+      "size_bytes": 3475,
+      "source_artifact": "LOCAL-HANDOFF/evidence-library",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+    }
+  ]
+}

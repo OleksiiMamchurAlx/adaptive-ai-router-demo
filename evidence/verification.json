@@ -1,0 +1,29 @@
+{
+  "executed_utc": "2026-09-16T06:17:46.986494+00:00",
+  "status": "PASS",
+  "tests": 20,
+  "command": "python -m unittest discover -v",
+  "python": "3.11.9",
+  "platform": "Windows",
+  "dependencies": "standard library only",
+  "provenance": "Fresh local execution of this public copy",
+  "source_hashes": {
+    "demo.py": "15005518b398d239ee4fd38647fa9fff58937b791d7d904ecf1716e463221e11",
+    "evidence.py": "9720f6b1a3e864ea9cd4732e0b8f54fdc2c69920d4d89100bfe0763ad6f4c513",
+    "test_demo.py": "0602867fc9d976f12d58830f1e8ec0784acf1bd1f2e861ec37d51030792ae889",
+    "test_evidence.py": "3dd717d816bada7421b47157deeacdb6b7859eb843a4e707606e1066cce2ace5"
+  },
+  "portable_demo": {
+    "mode": "NEW_PORTABLE_DETERMINISTIC_DEMO",
+    "status": "PASS",
+    "crash_exit": 73,
+    "tool_calls": 1,
+    "resume_count": 2,
+    "repeat_export_identical": true,
+    "reboot_tested": false,
+    "external_calls": 0,
+    "model_inference": false
+  },
+  "inherited_library_tests": 16,
+  "new_portable_demo_tests": 4
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "mode": "LIVE_LOCAL_DETERMINISTIC",
+  "crash_exit_code": 73,
+  "repeated_resume_identical": true,
+  "actual_tool_calls": 1,
+  "game_touched": false,
+  "reboot_tested": false,
+  "scope": "SQL-committed result survived abrupt worker exit; no model re-execution; export resumed twice",
+  "not_proven": [
+    "crash during external side effect",
+    "Windows boot",
+    "Codex conversation resume"
+  ],
+  "provenance": "Sanitized existing local record from 2026-09-15; not rerun for publication",
+  "public_demo_is_separate": true
+}

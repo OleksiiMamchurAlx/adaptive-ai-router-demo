@@ -1,0 +1,10 @@
+
+PRAGMA foreign_keys=ON;
+CREATE TABLE IF NOT EXISTS sources(source_id TEXT PRIMARY KEY, project TEXT NOT NULL, origin TEXT NOT NULL, sha256 TEXT NOT NULL, size_bytes INTEGER NOT NULL, captured_utc TEXT NOT NULL, evidence_kind TEXT NOT NULL, local_copy TEXT);
+CREATE TABLE IF NOT EXISTS claims(claim_id TEXT PRIMARY KEY, project TEXT NOT NULL, statement TEXT NOT NULL, status TEXT NOT NULL, source_id TEXT REFERENCES sources, limitation TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS capabilities(skill_id TEXT PRIMARY KEY, skill TEXT NOT NULL, status TEXT CHECK(status IN ('demonstrated','with_tools','needs_development','untested')), evidence TEXT NOT NULL, personal_contribution TEXT NOT NULL, assistance TEXT NOT NULL, next_step TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS jobs(job_id TEXT PRIMARY KEY, state TEXT NOT NULL, result_json TEXT, provider TEXT, run_id TEXT, tool_calls INTEGER NOT NULL DEFAULT 0, artifact_sha256 TEXT, updated_utc TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS validations(validation_id TEXT PRIMARY KEY, job_id TEXT REFERENCES jobs, verdict TEXT NOT NULL CHECK(verdict IN ('ACCEPT','REJECT','ERROR','NOT_RUN')), task_accepted INTEGER CHECK(task_accepted IN (0,1)), validator TEXT NOT NULL, evidence TEXT NOT NULL, CHECK((verdict='ACCEPT' AND task_accepted IS 1) OR (verdict='REJECT' AND task_accepted IS 0) OR (verdict IN ('ERROR','NOT_RUN') AND task_accepted IS NULL)));
+CREATE TABLE IF NOT EXISTS events(event_id TEXT PRIMARY KEY, job_id TEXT REFERENCES jobs, kind TEXT NOT NULL, payload TEXT NOT NULL, utc TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS metrics(metric_id TEXT PRIMARY KEY, project TEXT NOT NULL, build TEXT NOT NULL, capture_id TEXT NOT NULL, mode TEXT NOT NULL, name TEXT NOT NULL, value REAL, unit TEXT NOT NULL, missing_reason TEXT, source_id TEXT REFERENCES sources);
+CREATE TABLE IF NOT EXISTS consents(consent_id TEXT PRIMARY KEY, source TEXT NOT NULL, scope TEXT NOT NULL, router_grant INTEGER NOT NULL CHECK(router_grant=0), recorded_utc TEXT NOT NULL);
