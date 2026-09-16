@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "default_class": "REVIEWED",
+  "auto_merge": false,
+  "allowed_files": [
+    ".gitattributes",
+    ".github/workflows/ci.yml",
+    ".github/workflows/publication-check.yml",
+    ".gitignore",
+    "AGENTS.md",
+    "PUBLICATION_MANIFEST.json",
+    "README.md",
+    "RIGHTS_AND_ATTRIBUTION.md",
+    "demo.py",
+    "docs/EVIDENCE_BOUNDARIES.md",
+    "docs/SYSTEMS_DIAGNOSTICS.md",
+    "evidence.py",
+    "evidence/prior-recovery.json",
+    "evidence/unit-tests.txt",
+    "evidence/verification.json",
+    "project.json",
+    "publication-policy.json",
+    "schema.sql",
+    "test_demo.py",
+    "test_evidence.py",
+    "tools/publication_guard.py"
+  ],
+  "reviewed_hashes": {
+    ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+    ".gitignore": "4252cf8bcc263450ab2ee6a0fa6d3620363b9e027d99eb1d6a7d95e23c6441cb",
+    "AGENTS.md": "526d9df2a21f2157ab033939a5b1fa69b2e4a8e2b6969f62d5a92aa2a00da77d",
+    "demo.py": "15005518b398d239ee4fd38647fa9fff58937b791d7d904ecf1716e463221e11",
+    "evidence.py": "9720f6b1a3e864ea9cd4732e0b8f54fdc2c69920d4d89100bfe0763ad6f4c513",
+    "README.md": "078fc2809ba9da3e4df96ee04b6dbb949f8978d6540f5a1ab85a87ffa11ce7e5",
+    "RIGHTS_AND_ATTRIBUTION.md": "17de8c0616bd553d601d072c51790c5cdca64196d8890a9a4e1935d000d88323",
+    "schema.sql": "3249df94ee0cc5ca582e6a1cf1b91b22215ad7d5b5b9f8769cf647f828a4dc26",
+    "test_demo.py": "0602867fc9d976f12d58830f1e8ec0784acf1bd1f2e861ec37d51030792ae889",
+    "test_evidence.py": "3dd717d816bada7421b47157deeacdb6b7859eb843a4e707606e1066cce2ace5",
+    ".github/workflows/ci.yml": "073f39e1b171f93616360d7454dbef5930236d8f2893cdb688ed3cb219fd2e50",
+    ".github/workflows/publication-check.yml": "c21358dbcd4dadda198c4147f99d03a220369ae4eb323f326b0aae15e087f3de",
+    "docs/EVIDENCE_BOUNDARIES.md": "1e1c3a74ab6ae528f080a2e8db9adf7cf94a851b752670710e8f159e331492e3",
+    "docs/SYSTEMS_DIAGNOSTICS.md": "6d418975fc07057586608eb3e45661c7c86041adf05ebeaf1be932be98e9e922",
+    "evidence/prior-recovery.json": "5aa1859bed178291f54ffe811936369a3e9d91e54e03f001594d749d3166c388",
+    "evidence/unit-tests.txt": "f3a6120ab0a3a0b9c4c1130e0cc2fe5215f488ef754e2f6f1aadbc44c4bbe2cb",
+    "evidence/verification.json": "d27e11de24b333a308e087d6bd15716d6e43213fbd0b368cf130aabb37c205d3",
+    "tools/publication_guard.py": "8530e5965ad2a2ff965f99a7801acfd09115ff55f68cdeee4f527404f6a28857"
+  },
+  "approved_project": {
+    "schema_version": 1,
+    "project_id": "router",
+    "title": "Adaptive AI Router — Reliability & Evidence Demo",
+    "source_repo": "https://github.com/OleksiiMamchurAlx/adaptive-ai-router-demo",
+    "category": [
+      "reliability",
+      "automation",
+      "qa"
+    ],
+    "technology": [
+      "Python",
+      "SQLite"
+    ],
+    "skills_demonstrated": [
+      "structured validation",
+      "failure analysis",
+      "controlled recovery",
+      "SQL-backed evidence"
+    ],
+    "limitations": [
+      "not a production SRE platform",
+      "no model-weight training",
+      "no Windows reboot recovery",
+      "routing superiority not established"
+    ],
+    "ai_assistance": {
+      "owner_role": "project owner",
+      "implementation": "AI-assisted"
+    }
+  },
+  "authority": "Private AIQ reviewed configuration; candidate CI is not approval authority",
+  "rights_review": "Original project code, authored text and synthetic fixtures; existing rights notice retained"
+}

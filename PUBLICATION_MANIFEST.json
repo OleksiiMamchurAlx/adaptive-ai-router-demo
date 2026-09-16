@@ -2,157 +2,207 @@
   "schema": 1,
   "repository": "adaptive-ai-router-demo",
   "excludes_self": true,
-  "self_hash_location": "Detached publication-control manifest retained by project owner",
+  "self_hash_location": "Private detached projection receipt",
   "files": [
     {
       "path": ".gitattributes",
       "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
       "size_bytes": 19,
-      "source_artifact": "NEW-PUBLICATION-20260916",
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "CONTENT_REVIEWED",
+      "verification_status": "REVIEWED_AND_TESTED",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "073f39e1b171f93616360d7454dbef5930236d8f2893cdb688ed3cb219fd2e50",
+      "size_bytes": 696,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": ".github/workflows/publication-check.yml",
+      "sha256": "c21358dbcd4dadda198c4147f99d03a220369ae4eb323f326b0aae15e087f3de",
+      "size_bytes": 611,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
     },
     {
       "path": ".gitignore",
       "sha256": "4252cf8bcc263450ab2ee6a0fa6d3620363b9e027d99eb1d6a7d95e23c6441cb",
       "size_bytes": 80,
-      "source_artifact": "NEW-PUBLICATION-20260916",
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "CONTENT_REVIEWED",
+      "verification_status": "REVIEWED_AND_TESTED",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
     },
     {
       "path": "AGENTS.md",
       "sha256": "526d9df2a21f2157ab033939a5b1fa69b2e4a8e2b6969f62d5a92aa2a00da77d",
       "size_bytes": 499,
-      "source_artifact": "NEW-PUBLICATION-20260916",
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "CONTENT_REVIEWED",
+      "verification_status": "REVIEWED_AND_TESTED",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
-    },
-    {
-      "path": "demo.py",
-      "sha256": "15005518b398d239ee4fd38647fa9fff58937b791d7d904ecf1716e463221e11",
-      "size_bytes": 4072,
-      "source_artifact": "NEW-PUBLICATION-20260916",
-      "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "TESTED",
-      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
-    },
-    {
-      "path": "docs/EVIDENCE_BOUNDARIES.md",
-      "sha256": "1e1c3a74ab6ae528f080a2e8db9adf7cf94a851b752670710e8f159e331492e3",
-      "size_bytes": 1618,
-      "source_artifact": "NEW-PUBLICATION-20260916",
-      "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "CONTENT_REVIEWED",
-      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
-    },
-    {
-      "path": "docs/SYSTEMS_DIAGNOSTICS.md",
-      "sha256": "6d418975fc07057586608eb3e45661c7c86041adf05ebeaf1be932be98e9e922",
-      "size_bytes": 1772,
-      "source_artifact": "NEW-PUBLICATION-20260916",
-      "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "CONTENT_REVIEWED",
-      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
-    },
-    {
-      "path": "evidence/prior-recovery.json",
-      "sha256": "5aa1859bed178291f54ffe811936369a3e9d91e54e03f001594d749d3166c388",
-      "size_bytes": 553,
-      "source_artifact": "LOCAL-HANDOFF/router-demo",
-      "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "HISTORICAL_RECORD_REVIEWED_NOT_RERUN",
-      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
-    },
-    {
-      "path": "evidence/unit-tests.txt",
-      "sha256": "f3a6120ab0a3a0b9c4c1130e0cc2fe5215f488ef754e2f6f1aadbc44c4bbe2cb",
-      "size_bytes": 1825,
-      "source_artifact": "FRESH-PUBLIC-COPY-TEST-20260916",
-      "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "TESTED",
-      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
-    },
-    {
-      "path": "evidence/verification.json",
-      "sha256": "d27e11de24b333a308e087d6bd15716d6e43213fbd0b368cf130aabb37c205d3",
-      "size_bytes": 1010,
-      "source_artifact": "FRESH-PUBLIC-COPY-TEST-20260916",
-      "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "TESTED",
-      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
-    },
-    {
-      "path": "evidence.py",
-      "sha256": "9720f6b1a3e864ea9cd4732e0b8f54fdc2c69920d4d89100bfe0763ad6f4c513",
-      "size_bytes": 4987,
-      "source_artifact": "LOCAL-HANDOFF/evidence-library",
-      "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "TESTED",
-      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
     },
     {
       "path": "README.md",
       "sha256": "078fc2809ba9da3e4df96ee04b6dbb949f8978d6540f5a1ab85a87ffa11ce7e5",
       "size_bytes": 4565,
-      "source_artifact": "NEW-PUBLICATION-20260916",
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "CONTENT_REVIEWED",
+      "verification_status": "REVIEWED_AND_TESTED",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
     },
     {
       "path": "RIGHTS_AND_ATTRIBUTION.md",
       "sha256": "17de8c0616bd553d601d072c51790c5cdca64196d8890a9a4e1935d000d88323",
       "size_bytes": 974,
-      "source_artifact": "NEW-PUBLICATION-20260916",
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "CONTENT_REVIEWED",
+      "verification_status": "REVIEWED_AND_TESTED",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "demo.py",
+      "sha256": "15005518b398d239ee4fd38647fa9fff58937b791d7d904ecf1716e463221e11",
+      "size_bytes": 4072,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "docs/EVIDENCE_BOUNDARIES.md",
+      "sha256": "1e1c3a74ab6ae528f080a2e8db9adf7cf94a851b752670710e8f159e331492e3",
+      "size_bytes": 1618,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "docs/SYSTEMS_DIAGNOSTICS.md",
+      "sha256": "6d418975fc07057586608eb3e45661c7c86041adf05ebeaf1be932be98e9e922",
+      "size_bytes": 1772,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "evidence.py",
+      "sha256": "9720f6b1a3e864ea9cd4732e0b8f54fdc2c69920d4d89100bfe0763ad6f4c513",
+      "size_bytes": 4987,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "evidence/prior-recovery.json",
+      "sha256": "5aa1859bed178291f54ffe811936369a3e9d91e54e03f001594d749d3166c388",
+      "size_bytes": 553,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "evidence/unit-tests.txt",
+      "sha256": "f3a6120ab0a3a0b9c4c1130e0cc2fe5215f488ef754e2f6f1aadbc44c4bbe2cb",
+      "size_bytes": 1825,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "evidence/verification.json",
+      "sha256": "d27e11de24b333a308e087d6bd15716d6e43213fbd0b368cf130aabb37c205d3",
+      "size_bytes": 1010,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "project.json",
+      "sha256": "ef1cf242805576c00e9c0a558bd9ce2e0b7cfd9c5cff5630ea3ba7932ebe81f6",
+      "size_bytes": 1071,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "publication-policy.json",
+      "sha256": "1c38f3cc4a5f10985e72a4d947cd332e95d08addbc4e6f7180a5cab33c6450cf",
+      "size_bytes": 3424,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
     },
     {
       "path": "schema.sql",
       "sha256": "3249df94ee0cc5ca582e6a1cf1b91b22215ad7d5b5b9f8769cf647f828a4dc26",
       "size_bytes": 2001,
-      "source_artifact": "LOCAL-HANDOFF/evidence-library",
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "CONTENT_REVIEWED",
+      "verification_status": "REVIEWED_AND_TESTED",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
     },
     {
       "path": "test_demo.py",
       "sha256": "0602867fc9d976f12d58830f1e8ec0784acf1bd1f2e861ec37d51030792ae889",
       "size_bytes": 1521,
-      "source_artifact": "NEW-PUBLICATION-20260916",
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "TESTED",
+      "verification_status": "REVIEWED_AND_TESTED",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
     },
     {
       "path": "test_evidence.py",
       "sha256": "3dd717d816bada7421b47157deeacdb6b7859eb843a4e707606e1066cce2ace5",
       "size_bytes": 3475,
-      "source_artifact": "LOCAL-HANDOFF/evidence-library",
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
       "sanitization_status": "REVIEWED_PUBLIC_COPY",
-      "verification_status": "TESTED",
+      "verification_status": "REVIEWED_AND_TESTED",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
-      "rights_note": "Original demo/text or synthetic data; no third-party implementation; no additional license grant"
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
+    },
+    {
+      "path": "tools/publication_guard.py",
+      "sha256": "8530e5965ad2a2ff965f99a7801acfd09115ff55f68cdeee4f527404f6a28857",
+      "size_bytes": 6433,
+      "source_artifact": "REVIEWED-AUTOMATION-BOOTSTRAP",
+      "sanitization_status": "REVIEWED_PUBLIC_COPY",
+      "verification_status": "REVIEWED_AND_TESTED",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original code/text or synthetic data; no additional license grant"
     }
   ]
 }
