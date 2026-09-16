@@ -20,6 +20,6 @@ test_repeatable_export (test_evidence.EvidenceTests.test_repeatable_export) ... 
 test_transaction_rollback (test_evidence.EvidenceTests.test_transaction_rollback) ... ok
 
 ----------------------------------------------------------------------
-Ran 20 tests in 1.210s
+Ran 20 tests in 1.207s
 
 OK
