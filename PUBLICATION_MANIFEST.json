@@ -56,8 +56,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "078fc2809ba9da3e4df96ee04b6dbb949f8978d6540f5a1ab85a87ffa11ce7e5",
-      "size_bytes": 4565,
+      "sha256": "7687d94f21d4437313176471f89587f554463aeda0c3c106de78817d400e9a3b",
+      "size_bytes": 5031,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -88,6 +88,16 @@
       "path": "docs/EVIDENCE_BOUNDARIES.md",
       "sha256": "1e1c3a74ab6ae528f080a2e8db9adf7cf94a851b752670710e8f159e331492e3",
       "size_bytes": 1618,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
+    },
+    {
+      "path": "docs/FUTURE_RD_METHOD.md",
+      "sha256": "76393dd63d7dc3e622ab0f505df6f4074543608baf34ffc9b6865309d54be004",
+      "size_bytes": 2521,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -146,7 +156,7 @@
     },
     {
       "path": "project.json",
-      "sha256": "e361128079fe6c894851393f11fb0948116a9877ffefeb3e06837fbaa75ef0e3",
+      "sha256": "ba818de35f9b246e5ef32b48853aa367fb86bf413656b7089055e8c68b862334",
       "size_bytes": 1071,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
@@ -155,9 +165,29 @@
       "rights_note": "Original project materials; existing rights notice retained"
     },
     {
+      "path": "projects/future-unreal-automation-rd.json",
+      "sha256": "a9d6f4dbe04c04cc2b3823689aff7f94b995db685e4b562d22ba7c7c3a34e98c",
+      "size_bytes": 1865,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
+    },
+    {
+      "path": "projects/research.schema.json",
+      "sha256": "a5c6aefcdb1da6834b995ad31be8ea45c0fddae29c08490a0b226c68d8c5f89e",
+      "size_bytes": 2332,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
+    },
+    {
       "path": "publication-policy.json",
-      "sha256": "1c38f3cc4a5f10985e72a4d947cd332e95d08addbc4e6f7180a5cab33c6450cf",
-      "size_bytes": 3424,
+      "sha256": "e09a8a45c744e0463e4a0a54460d67045062b6376a3d42341960e8f1ae8c3735",
+      "size_bytes": 6071,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -188,6 +218,16 @@
       "path": "test_evidence.py",
       "sha256": "3dd717d816bada7421b47157deeacdb6b7859eb843a4e707606e1066cce2ace5",
       "size_bytes": 3475,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
+    },
+    {
+      "path": "test_future_rd.py",
+      "sha256": "182a84f6d575ff22f37b2885adf87df8579edd5ab3343aef4dd1333d12e5fe0a",
+      "size_bytes": 2066,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
