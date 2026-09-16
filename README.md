@@ -17,7 +17,7 @@ python demo.py self-test
 
 The demo runs in an automatically cleaned temporary directory. It selects a deterministic numeric tool, computes a mean, checks it against an exact oracle, commits a validation and event to SQLite, deliberately exits with code 73, then resumes export twice. The coordinator expects that worker exit; the overall self-test returns success.
 
-**Test scope:** 16 inherited evidence-library tests plus 4 new portable-demo tests. These are isolated checks, not a percentage of production reliability. See [verification results](evidence/verification.json).
+**Test scope:** 16 inherited evidence-library tests, 4 portable-demo tests and 6 planning-metadata checks. These are isolated checks, not a percentage of production reliability or Unreal gameplay tests. See [current verification](project.json); [earlier results](evidence/verification.json) remain historical.
 
 ## What I owned / how AI helped
 
@@ -61,3 +61,7 @@ Earlier testing caught an unclosed SQLite connection during Windows cleanup and 
 Reliability-oriented automation, QA test design, Python/SQL, validation semantics, failure analysis, reproducible evidence and explicit acceptance boundaries.
 
 Raw databases, runtime identifiers, internal configuration, personal documents and third-party binaries are intentionally excluded. [Rights and attribution](RIGHTS_AND_ATTRIBUTION.md). [Publication manifest](PUBLICATION_MANIFEST.json).
+
+## Related planning evidence
+
+[Future Game Automation / Unreal R&D](docs/FUTURE_RD_METHOD.md) is a small, separately labelled architecture-planning case: task dependencies, acceptance criteria, telemetry and bounded repair loops. It is not a shipped game or a verified production Unreal system. [Machine-readable summary](projects/future-unreal-automation-rd.json).

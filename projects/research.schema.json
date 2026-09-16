@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed planning evidence v1",
+  "description": "Exact reviewed public projection; changing this contract requires claim review, never automatic promotion.",
+  "type": "object",
+  "const": {
+    "schema_version": 1,
+    "project_id": "future-unreal-automation-rd",
+    "title": "Future Game Automation / Unreal R&D",
+    "status": "Research / architecture planning",
+    "role": "Project owner; AI-assisted architecture and validation planning",
+    "summary": "A bounded architecture study for an independent game-development control plane: dependency-aware tasks, separate execution and validation, evidence tied to revisions, failure classification and explicit human review gates.",
+    "technologies_discussed": [
+      "Unreal Engine",
+      "Python",
+      "SQLite",
+      "Git"
+    ],
+    "skills_demonstrated": [
+      "Task dependency design",
+      "Acceptance-test planning",
+      "Telemetry and evidence design",
+      "Failure classification and bounded repair planning",
+      "AI-assisted orchestration planning"
+    ],
+    "evidence_type": "Reviewed local architecture documents and task manifests; planning evidence only",
+    "limitations": [
+      "This public case covers architecture planning, not independently reverified gameplay.",
+      "No shipped game or production Unreal/MMO infrastructure is claimed.",
+      "Multiplayer, combat completeness and performance are not established by this case.",
+      "A technical test does not replace subjective camera or movement acceptance.",
+      "No model-weight training or general routing superiority is claimed."
+    ],
+    "private_sources_excluded": [
+      "Raw conversations and prompts",
+      "Runtime identifiers, databases and logs",
+      "Local paths and environment inventories",
+      "Game assets, engine code and third-party binaries"
+    ],
+    "ai_disclosure": "I use AI tools as engineering assistants. I define project goals, constraints and acceptance criteria, review outputs, preserve failures and limitations, and validate results through tests or reproducible evidence.",
+    "target_role_tags": [
+      "reliability",
+      "automation",
+      "qa"
+    ],
+    "updated_at": "2026-09-16",
+    "evidence_links": [
+      "docs/FUTURE_RD_METHOD.md"
+    ]
+  }
+}
