@@ -13,16 +13,20 @@
     "RIGHTS_AND_ATTRIBUTION.md",
     "demo.py",
     "docs/EVIDENCE_BOUNDARIES.md",
+    "docs/FUTURE_RD_METHOD.md",
     "docs/SYSTEMS_DIAGNOSTICS.md",
     "evidence.py",
     "evidence/prior-recovery.json",
     "evidence/unit-tests.txt",
     "evidence/verification.json",
     "project.json",
+    "projects/future-unreal-automation-rd.json",
+    "projects/research.schema.json",
     "publication-policy.json",
     "schema.sql",
     "test_demo.py",
     "test_evidence.py",
+    "test_future_rd.py",
     "tools/publication_guard.py"
   ],
   "reviewed_hashes": {
@@ -31,7 +35,7 @@
     "AGENTS.md": "526d9df2a21f2157ab033939a5b1fa69b2e4a8e2b6969f62d5a92aa2a00da77d",
     "demo.py": "15005518b398d239ee4fd38647fa9fff58937b791d7d904ecf1716e463221e11",
     "evidence.py": "9720f6b1a3e864ea9cd4732e0b8f54fdc2c69920d4d89100bfe0763ad6f4c513",
-    "README.md": "078fc2809ba9da3e4df96ee04b6dbb949f8978d6540f5a1ab85a87ffa11ce7e5",
+    "README.md": "7687d94f21d4437313176471f89587f554463aeda0c3c106de78817d400e9a3b",
     "RIGHTS_AND_ATTRIBUTION.md": "17de8c0616bd553d601d072c51790c5cdca64196d8890a9a4e1935d000d88323",
     "schema.sql": "3249df94ee0cc5ca582e6a1cf1b91b22215ad7d5b5b9f8769cf647f828a4dc26",
     "test_demo.py": "0602867fc9d976f12d58830f1e8ec0784acf1bd1f2e861ec37d51030792ae889",
@@ -43,7 +47,11 @@
     "evidence/prior-recovery.json": "5aa1859bed178291f54ffe811936369a3e9d91e54e03f001594d749d3166c388",
     "evidence/unit-tests.txt": "f3a6120ab0a3a0b9c4c1130e0cc2fe5215f488ef754e2f6f1aadbc44c4bbe2cb",
     "evidence/verification.json": "d27e11de24b333a308e087d6bd15716d6e43213fbd0b368cf130aabb37c205d3",
-    "tools/publication_guard.py": "8530e5965ad2a2ff965f99a7801acfd09115ff55f68cdeee4f527404f6a28857"
+    "tools/publication_guard.py": "8530e5965ad2a2ff965f99a7801acfd09115ff55f68cdeee4f527404f6a28857",
+    "projects/future-unreal-automation-rd.json": "a9d6f4dbe04c04cc2b3823689aff7f94b995db685e4b562d22ba7c7c3a34e98c",
+    "docs/FUTURE_RD_METHOD.md": "76393dd63d7dc3e622ab0f505df6f4074543608baf34ffc9b6865309d54be004",
+    "projects/research.schema.json": "a5c6aefcdb1da6834b995ad31be8ea45c0fddae29c08490a0b226c68d8c5f89e",
+    "test_future_rd.py": "182a84f6d575ff22f37b2885adf87df8579edd5ab3343aef4dd1333d12e5fe0a"
   },
   "approved_project": {
     "schema_version": 1,
@@ -77,5 +85,50 @@
     }
   },
   "authority": "Private AIQ reviewed configuration; candidate CI is not approval authority",
-  "rights_review": "Original project code, authored text and synthetic fixtures; existing rights notice retained"
+  "rights_review": "Original project code, authored text and synthetic fixtures; existing rights notice retained",
+  "approved_research": {
+    "schema_version": 1,
+    "project_id": "future-unreal-automation-rd",
+    "title": "Future Game Automation / Unreal R&D",
+    "status": "Research / architecture planning",
+    "role": "Project owner; AI-assisted architecture and validation planning",
+    "summary": "A bounded architecture study for an independent game-development control plane: dependency-aware tasks, separate execution and validation, evidence tied to revisions, failure classification and explicit human review gates.",
+    "technologies_discussed": [
+      "Unreal Engine",
+      "Python",
+      "SQLite",
+      "Git"
+    ],
+    "skills_demonstrated": [
+      "Task dependency design",
+      "Acceptance-test planning",
+      "Telemetry and evidence design",
+      "Failure classification and bounded repair planning",
+      "AI-assisted orchestration planning"
+    ],
+    "evidence_type": "Reviewed local architecture documents and task manifests; planning evidence only",
+    "limitations": [
+      "This public case covers architecture planning, not independently reverified gameplay.",
+      "No shipped game or production Unreal/MMO infrastructure is claimed.",
+      "Multiplayer, combat completeness and performance are not established by this case.",
+      "A technical test does not replace subjective camera or movement acceptance.",
+      "No model-weight training or general routing superiority is claimed."
+    ],
+    "private_sources_excluded": [
+      "Raw conversations and prompts",
+      "Runtime identifiers, databases and logs",
+      "Local paths and environment inventories",
+      "Game assets, engine code and third-party binaries"
+    ],
+    "ai_disclosure": "I use AI tools as engineering assistants. I define project goals, constraints and acceptance criteria, review outputs, preserve failures and limitations, and validate results through tests or reproducible evidence.",
+    "target_role_tags": [
+      "reliability",
+      "automation",
+      "qa"
+    ],
+    "updated_at": "2026-09-16",
+    "evidence_links": [
+      "docs/FUTURE_RD_METHOD.md"
+    ]
+  }
 }
