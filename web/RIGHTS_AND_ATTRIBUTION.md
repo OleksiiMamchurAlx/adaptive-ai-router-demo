@@ -1,0 +1,7 @@
+# Browser demo source and runtime
+
+This proposed `web/` release includes selected source from the local Adaptive AI Router native candidate with archive SHA-256 `75dc50a9caa612c6d844063e46dff509872f82723a8046232940269974efda57`. `native_workflow.py` and `numeric_validation.py` match that candidate byte for byte; `experience_store.py` contains its extracted numeric `calculate` function. `tracking_core.py` and `browser_driver.py` are browser-specific adapters. This provenance statement identifies source bytes, not a grant of redistribution rights. Owner review of the native source and publication scope is required before public release.
+
+The worker loads Pyodide 314.0.7 from the versioned jsDelivr URL at runtime. Pyodide is developed by the Pyodide contributors under the Mozilla Public License 2.0; see the [official project license](https://github.com/pyodide/pyodide/blob/314.0.7/LICENSE) and [project description](https://pyodide.org/en/stable/project/about.html). Pyodide binaries are not copied into this repository. A first browser run requires that CDN, and later offline availability depends on the browser cache.
+
+The full Adaptive AI Router provider runtime, model weights, credentials, private traces and active databases are excluded. The code in this demo has no additional open-source redistribution license selected. Publication alone does not grant MIT, GPL or another blanket license for these files.
