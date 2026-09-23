@@ -22,8 +22,10 @@ this browser session's observed input and events. **Reset my demo session**
 deletes only that session's local database.
 
 The page does not call a language model or send task inputs to a server. The
-route is deterministic. IndexedDB storage is confirmed before success is shown,
-but a browser can deny, evict or clear it. This sample does not demonstrate
+route is deterministic. Session storage is checked before a worker starts, and
+IndexedDB sync is confirmed before success is shown. A denied or failed write
+blocks that action without showing a new success receipt. A browser can still
+evict or clear saved data later. This sample does not demonstrate
 Windows reboot recovery, native process locks, general external effects,
 production service integration or model-weight training. Browser workers are
 discarded after each operation so a resumed task loads persisted state again.

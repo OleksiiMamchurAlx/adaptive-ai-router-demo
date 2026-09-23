@@ -62,7 +62,7 @@
 
   <section class="note" id="limits">
     <h2>Scope and limits</h2>
-    <p>“Simulate interruption” injects a test-only stop after the numeric effect is committed, before validation. Resume starts a new browser worker and reuses that committed effect. It does not stop the installed Router. Browser data is written to IndexedDB before the page acknowledges success. The browser can deny, evict or clear that storage; this is not Windows service recovery. Two tabs are serialized through Web Locks. No language model, provider key, account, analytics or server-side task storage is used.</p>
+    <p>“Simulate interruption” injects a test-only stop after the numeric effect is committed, before validation. Resume starts a new browser worker and reuses that committed effect. It does not stop the installed Router. This page needs session storage and IndexedDB; it blocks an action if either cannot confirm its write. The browser can later evict or clear saved data; this is not Windows service recovery. Two tabs are serialized through Web Locks. No language model, provider key, account, analytics or server-side task storage is used.</p>
     <p><a href="./README.md">Reproduce this candidate</a> · <a href="./core-manifest.json">Source hashes</a> · <a href="./RIGHTS_AND_ATTRIBUTION.md">Rights and attribution</a> · <a href="https://github.com/OleksiiMamchurAlx/adaptive-ai-router-demo/blob/8d055afd4cc1c90186f5e056fba30bbb9d7eb132/docs/EVIDENCE_BOUNDARIES.md">Earlier evidence boundaries</a></p>
   </section>
   <script type="module" src="./page.js"></script>

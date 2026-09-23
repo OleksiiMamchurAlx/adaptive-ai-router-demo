@@ -4,14 +4,21 @@ const actionIds = ['prepare','run','interrupt','resume','cancel','reset'];
 let session;
 let lastReceipt = null;
 let busy = false;
+let sessionStorageFault = false;
 
 function freshSession() {
   return {session_id: crypto.randomUUID().replaceAll('-', ''), revision: 0, lastInput: null};
 }
 
 function restoreSession() {
+  let savedText;
+  try { savedText = sessionStorage.getItem(storageKey); }
+  catch (_) {
+    sessionStorageFault = true;
+    return freshSession();
+  }
   try {
-    const saved = JSON.parse(sessionStorage.getItem(storageKey) || 'null');
+    const saved = JSON.parse(savedText || 'null');
     if (saved && /^[0-9a-f]{32}$/.test(saved.session_id) &&
         Number.isInteger(saved.revision) && saved.revision >= 0)
       return saved;
@@ -19,7 +26,17 @@ function restoreSession() {
   return freshSession();
 }
 
-function saveSession() { sessionStorage.setItem(storageKey, JSON.stringify(session)); }
+function saveSession(candidate) {
+  const record = JSON.stringify(candidate);
+  try {
+    sessionStorage.setItem(storageKey, record);
+    if (sessionStorage.getItem(storageKey) !== record) throw new Error('NOT_STORED');
+  } catch (_) {
+    sessionStorageFault = true;
+    throw new Error('Browser session storage unavailable; task was not started.');
+  }
+  sessionStorageFault = false;
+}
 function message(value) { $('message').textContent = value; }
 
 function getInput() {
@@ -35,11 +52,10 @@ function getInput() {
 
 function prepareRevision(input) {
   const canonical = JSON.stringify(input);
-  if (canonical !== session.lastInput) {
-    session.revision += 1;
-    session.lastInput = canonical;
-    saveSession();
-  }
+  const next = canonical === session.lastInput ? session :
+    {...session, revision:session.revision + 1, lastInput:canonical};
+  saveSession(next);
+  session = next;
   return {session_id:session.session_id, revision:session.revision, ...input};
 }
 
@@ -89,9 +105,12 @@ async function act(action) {
   busy = true;
   for (const id of actionIds) $(id).disabled = true;
   message('Loading the pinned Python runtime and executing the selected action…');
+  let resetAcknowledged = false;
   try {
     if (action === 'reset') {
+      saveSession(session);
       await workerAction('reset', {session_id:session.session_id});
+      resetAcknowledged = true;
       sessionStorage.removeItem(storageKey);
       session = freshSession();
       lastReceipt = null;
@@ -106,12 +125,20 @@ async function act(action) {
       payload = prepareRevision(getInput());
     else {
       if (!session.revision) throw new Error('No prepared task to resume or cancel.');
+      saveSession(session);
       payload = {session_id:session.session_id, revision:session.revision};
     }
     const receipt = await workerAction(action, payload);
     render(receipt);
   } catch (error) {
-    message(`Action blocked: ${String(error.message || error).slice(0, 240)} No durable success receipt was issued.`);
+    lastReceipt = null;
+    $('summary').textContent = 'Action blocked; no result for this action.';
+    $('input').textContent = '—';
+    $('events').textContent = '—';
+    const detail = String(error.message || error).slice(0, 240);
+    message(resetAcknowledged ?
+      `Reset was acknowledged, but the browser session marker could not be cleared: ${detail} Inspect storage before retrying.` :
+      `Action blocked: ${detail} No durable success receipt was issued.`);
   } finally {
     busy = false;
     for (const id of actionIds) $(id).disabled = false;
@@ -119,6 +146,8 @@ async function act(action) {
 }
 
 session = restoreSession();
+if (sessionStorageFault)
+  message('Browser session storage is unavailable. Actions remain blocked until it can be verified.');
 if (session.lastInput) {
   try {
     const input = JSON.parse(session.lastInput);
@@ -136,8 +165,13 @@ channel.onmessage = event => {
     channel.postMessage({type:'collision', session_id:session.session_id,
       page_id:pageId, target:data.page_id});
   if (data.type === 'collision' && data.target === pageId) {
-    session = freshSession();
-    saveSession();
+    const isolated = freshSession();
+    try { saveSession(isolated); }
+    catch (error) {
+      message(`Tab isolation blocked: ${error.message}`);
+      return;
+    }
+    session = isolated;
     lastReceipt = null;
     $('summary').textContent = 'This tab has its own new demo session.';
     $('input').textContent = '—';
