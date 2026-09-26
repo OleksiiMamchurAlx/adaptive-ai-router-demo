@@ -27,31 +27,53 @@
     "test_demo.py",
     "test_evidence.py",
     "test_future_rd.py",
-    "tools/publication_guard.py"
+    "tools/publication_guard.py",
+    "web/README.md",
+    "web/RIGHTS_AND_ATTRIBUTION.md",
+    "web/core-manifest.json",
+    "web/core/browser_driver.py",
+    "web/core/experience_store.py",
+    "web/core/native_workflow.py",
+    "web/core/numeric_validation.py",
+    "web/core/tracking_core.py",
+    "web/index.html",
+    "web/page.js",
+    "web/worker.js"
   ],
   "reviewed_hashes": {
     ".gitattributes": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
-    ".gitignore": "4252cf8bcc263450ab2ee6a0fa6d3620363b9e027d99eb1d6a7d95e23c6441cb",
-    "AGENTS.md": "526d9df2a21f2157ab033939a5b1fa69b2e4a8e2b6969f62d5a92aa2a00da77d",
-    "demo.py": "15005518b398d239ee4fd38647fa9fff58937b791d7d904ecf1716e463221e11",
-    "evidence.py": "9720f6b1a3e864ea9cd4732e0b8f54fdc2c69920d4d89100bfe0763ad6f4c513",
-    "README.md": "7687d94f21d4437313176471f89587f554463aeda0c3c106de78817d400e9a3b",
-    "RIGHTS_AND_ATTRIBUTION.md": "17de8c0616bd553d601d072c51790c5cdca64196d8890a9a4e1935d000d88323",
-    "schema.sql": "3249df94ee0cc5ca582e6a1cf1b91b22215ad7d5b5b9f8769cf647f828a4dc26",
-    "test_demo.py": "0602867fc9d976f12d58830f1e8ec0784acf1bd1f2e861ec37d51030792ae889",
-    "test_evidence.py": "3dd717d816bada7421b47157deeacdb6b7859eb843a4e707606e1066cce2ace5",
     ".github/workflows/ci.yml": "073f39e1b171f93616360d7454dbef5930236d8f2893cdb688ed3cb219fd2e50",
     ".github/workflows/publication-check.yml": "c21358dbcd4dadda198c4147f99d03a220369ae4eb323f326b0aae15e087f3de",
+    ".gitignore": "4252cf8bcc263450ab2ee6a0fa6d3620363b9e027d99eb1d6a7d95e23c6441cb",
+    "AGENTS.md": "526d9df2a21f2157ab033939a5b1fa69b2e4a8e2b6969f62d5a92aa2a00da77d",
+    "README.md": "7687d94f21d4437313176471f89587f554463aeda0c3c106de78817d400e9a3b",
+    "RIGHTS_AND_ATTRIBUTION.md": "dac557a04c31576162263374c53fe6c25c5bc4b9238692048e1a43f72276af7c",
+    "demo.py": "15005518b398d239ee4fd38647fa9fff58937b791d7d904ecf1716e463221e11",
     "docs/EVIDENCE_BOUNDARIES.md": "1e1c3a74ab6ae528f080a2e8db9adf7cf94a851b752670710e8f159e331492e3",
+    "docs/FUTURE_RD_METHOD.md": "76393dd63d7dc3e622ab0f505df6f4074543608baf34ffc9b6865309d54be004",
     "docs/SYSTEMS_DIAGNOSTICS.md": "6d418975fc07057586608eb3e45661c7c86041adf05ebeaf1be932be98e9e922",
+    "evidence.py": "9720f6b1a3e864ea9cd4732e0b8f54fdc2c69920d4d89100bfe0763ad6f4c513",
     "evidence/prior-recovery.json": "5aa1859bed178291f54ffe811936369a3e9d91e54e03f001594d749d3166c388",
     "evidence/unit-tests.txt": "f3a6120ab0a3a0b9c4c1130e0cc2fe5215f488ef754e2f6f1aadbc44c4bbe2cb",
     "evidence/verification.json": "d27e11de24b333a308e087d6bd15716d6e43213fbd0b368cf130aabb37c205d3",
-    "tools/publication_guard.py": "8530e5965ad2a2ff965f99a7801acfd09115ff55f68cdeee4f527404f6a28857",
     "projects/future-unreal-automation-rd.json": "a9d6f4dbe04c04cc2b3823689aff7f94b995db685e4b562d22ba7c7c3a34e98c",
-    "docs/FUTURE_RD_METHOD.md": "76393dd63d7dc3e622ab0f505df6f4074543608baf34ffc9b6865309d54be004",
     "projects/research.schema.json": "a5c6aefcdb1da6834b995ad31be8ea45c0fddae29c08490a0b226c68d8c5f89e",
-    "test_future_rd.py": "182a84f6d575ff22f37b2885adf87df8579edd5ab3343aef4dd1333d12e5fe0a"
+    "schema.sql": "3249df94ee0cc5ca582e6a1cf1b91b22215ad7d5b5b9f8769cf647f828a4dc26",
+    "test_demo.py": "0602867fc9d976f12d58830f1e8ec0784acf1bd1f2e861ec37d51030792ae889",
+    "test_evidence.py": "3dd717d816bada7421b47157deeacdb6b7859eb843a4e707606e1066cce2ace5",
+    "test_future_rd.py": "182a84f6d575ff22f37b2885adf87df8579edd5ab3343aef4dd1333d12e5fe0a",
+    "tools/publication_guard.py": "8530e5965ad2a2ff965f99a7801acfd09115ff55f68cdeee4f527404f6a28857",
+    "web/README.md": "db5663ab763c5e9a50cb7543ff5ba9edeec561dec91f5bf291ecc7b4a88452e2",
+    "web/RIGHTS_AND_ATTRIBUTION.md": "a3d27f046c8fbe84598e2d8953b332efa0e505e946637d019fe1fe403273b0fd",
+    "web/core-manifest.json": "965cce3f7ec363b52e8a3a261f83557ba436104982b40854b57a9b993968451c",
+    "web/core/browser_driver.py": "1dc1c62db8f77944b5e7df77c24c96b4933a9bd58290727b76201d855831b405",
+    "web/core/experience_store.py": "4f6fd705f37a86bca0dfa5fcb6ee94fc072a9bd0f7d1c287fe04b0624c9e8b3d",
+    "web/core/native_workflow.py": "5726c852895af5f9eb0c92b018c45eb3946ccf7ca149cf64c3c1dcc6bf3a1f2c",
+    "web/core/numeric_validation.py": "d89538199c040711d41a03c6bbf5136b9bc1e93516a87975831b94ef05cc35ed",
+    "web/core/tracking_core.py": "6ce1789c2f663e6dfe71d0f69a649b7483516c9b2c1bcb856b185dfb13c696ca",
+    "web/index.html": "7200c3e82deb7a12a4433239354a6b2c20445e3617e055083d6fe9d8a1ee7be3",
+    "web/page.js": "318eb6edc755d4678236de7b365754bc9423026171bfe95bf7c88e938bc56769",
+    "web/worker.js": "0cd54e004e9c86eb05425be7eef652171a3aa91cd4f9bee9d67902e51ba3dad3"
   },
   "approved_project": {
     "schema_version": 1,
@@ -85,7 +107,7 @@
     }
   },
   "authority": "Private AIQ reviewed configuration; candidate CI is not approval authority",
-  "rights_review": "Original project code, authored text and synthetic fixtures; existing rights notice retained",
+  "rights_review": "Owner authorized only the exact bounded native-derived web subset and existing public demo on 2026-09-26; no blanket third-party provenance or extra open-source license is asserted. Pyodide 314.0.7 is loaded separately from its CDN under MPL-2.0.",
   "approved_research": {
     "schema_version": 1,
     "project_id": "future-unreal-automation-rd",
@@ -129,6 +151,22 @@
     "updated_at": "2026-09-16",
     "evidence_links": [
       "docs/FUTURE_RD_METHOD.md"
+    ]
+  },
+  "approved_web_demo": {
+    "entry": "web/index.html",
+    "files": [
+      "web/README.md",
+      "web/RIGHTS_AND_ATTRIBUTION.md",
+      "web/core-manifest.json",
+      "web/core/browser_driver.py",
+      "web/core/experience_store.py",
+      "web/core/native_workflow.py",
+      "web/core/numeric_validation.py",
+      "web/core/tracking_core.py",
+      "web/index.html",
+      "web/page.js",
+      "web/worker.js"
     ]
   }
 }

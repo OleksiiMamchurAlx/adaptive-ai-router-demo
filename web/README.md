@@ -1,6 +1,6 @@
 # Bounded native-core browser demo
 
-This is a local candidate for a public, static-hosted interactive sample. It
+This is a public, static-hosted interactive sample. It
 runs the accepted `native_workflow.py` and `numeric_validation.py` files without
 changing their bytes. The numeric `calculate` function is extracted verbatim
 from the native `experience_store.py`. `tracking_core.py` is a small browser
@@ -30,8 +30,12 @@ Windows reboot recovery, native process locks, general external effects,
 production service integration or model-weight training. Browser workers are
 discarded after each operation so a resumed task loads persisted state again.
 
+This first public release requires access to its network dependencies to start
+and execute tasks. Offline operation is not supported. When a required resource
+cannot be fetched, a new task is blocked without a success receipt.
+
 `core-manifest.json` lists the exact public module hashes. The native-source
 comparison and contract vector results are kept in the local review evidence.
-See [rights and attribution](RIGHTS_AND_ATTRIBUTION.md) for this proposed
+See [rights and attribution](RIGHTS_AND_ATTRIBUTION.md) for this bounded
 native-core subset and its separately loaded browser runtime.
 The existing command-line demo and its historical evidence remain separate.
