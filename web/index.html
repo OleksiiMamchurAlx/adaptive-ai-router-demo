@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adaptive AI Router | Bounded native-core browser demo</title>
+  <style>
+    :root { color-scheme: dark; font: 16px/1.5 system-ui, sans-serif; background:#0b1320; color:#e5edf6; }
+    body { max-width:940px; margin:0 auto; padding:2rem 1rem 5rem; }
+    h1 { font-size:clamp(2rem,5vw,3rem); line-height:1.1; margin:.4rem 0; }
+    h2 { margin-top:2.3rem; font-size:1.2rem; }
+    p { color:#b8c6d7; }
+    .tag { display:inline-block; border:1px solid #4878a6; border-radius:2rem; padding:.25rem .75rem; color:#b9dcff; font-size:.82rem; }
+    .panel { background:#142236; border:1px solid #334b64; border-radius:1rem; padding:1.3rem; margin-top:1.4rem; }
+    label { display:block; font-weight:600; margin:.8rem 0 .25rem; }
+    input,select,button { font:inherit; }
+    input,select { box-sizing:border-box; width:100%; padding:.7rem; background:#0b1727; color:#fff; border:1px solid #59718d; border-radius:.55rem; }
+    input:focus,select:focus,button:focus { outline:3px solid #8dc2ff; outline-offset:2px; }
+    .buttons { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.2rem; }
+    button { border:1px solid #6992b7; border-radius:.55rem; padding:.65rem .9rem; color:#fff; background:#205081; cursor:pointer; }
+    button.secondary { background:#172b42; }
+    button.danger { background:#543040; }
+    button:disabled { opacity:.5; cursor:wait; }
+    pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#0b1727; border:1px solid #2c435d; border-radius:.6rem; padding:1rem; font-size:.82rem; }
+    .result { font-size:1.15rem; color:#dbf7dc; }
+    .note { border-left:3px solid #76a9d5; padding-left:1rem; }
+    a { color:#a8d2ff; }
+  </style>
+</head>
+<body>
+  <span class="tag">Real native workflow modules · browser adapter · no model calls</span>
+  <h1>Try a bounded Router task</h1>
+  <p>Choose a numeric operation and up to 32 values. The page runs the reviewed Python workflow inside your browser. The route is a deterministic local executor. Validation and recovery use the same native workflow module as the local candidate.</p>
+
+  <section class="panel" aria-labelledby="scenario">
+    <h2 id="scenario">Scenario</h2>
+    <label for="operation">Operation</label>
+    <select id="operation">
+      <option value="sum">Sum</option><option value="mean" selected>Mean</option>
+      <option value="min">Minimum</option><option value="max">Maximum</option><option value="range">Range</option>
+    </select>
+    <label for="values">Numbers, separated by commas or spaces</label>
+    <input id="values" value="12, 18, 30" maxlength="320" autocomplete="off">
+    <div class="buttons">
+      <button id="prepare" class="secondary">Prepare</button>
+      <button id="run">Run</button>
+      <button id="interrupt" class="secondary">Simulate interruption</button>
+      <button id="resume" class="secondary">Resume</button>
+      <button id="cancel" class="secondary">Cancel</button>
+      <button id="receipt" class="secondary">Download receipt</button>
+      <button id="reset" class="danger">Reset my demo session</button>
+    </div>
+    <p id="message" role="status">Ready. First load downloads the pinned Python runtime.</p>
+  </section>
+
+  <section class="panel" aria-labelledby="outcome">
+    <h2 id="outcome">Observed result</h2>
+    <div id="summary" class="result">No task has run.</div>
+    <h2>Accepted input and route</h2><pre id="input">—</pre>
+    <h2>Transitions and checks</h2><pre id="events">—</pre>
+  </section>
+
+  <section class="note" id="limits">
+    <h2>Scope and limits</h2>
+    <p>“Simulate interruption” injects a test-only stop after the numeric effect is committed, before validation. Resume starts a new browser worker and reuses that committed effect. It does not stop the installed Router. This page needs session storage and IndexedDB; it blocks an action if either cannot confirm its write. The browser can later evict or clear saved data; this is not Windows service recovery. Two tabs are serialized through Web Locks. No language model, provider key, account, analytics or server-side task storage is used.</p>
+    <p>This online demo requires network access to its dependencies. Offline operation is not supported. If a required resource cannot be fetched, a new task is blocked without a success receipt.</p>
+    <p><a href="./README.md">Reproduce this demo</a> · <a href="./core-manifest.json">Source hashes</a> · <a href="./RIGHTS_AND_ATTRIBUTION.md">Rights and attribution</a> · <a href="https://github.com/OleksiiMamchurAlx/adaptive-ai-router-demo/blob/8d055afd4cc1c90186f5e056fba30bbb9d7eb132/docs/EVIDENCE_BOUNDARIES.md">Earlier evidence boundaries</a></p>
+  </section>
+  <script type="module" src="./page.js"></script>
+</body>
+</html>

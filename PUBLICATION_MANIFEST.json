@@ -66,8 +66,8 @@
     },
     {
       "path": "RIGHTS_AND_ATTRIBUTION.md",
-      "sha256": "17de8c0616bd553d601d072c51790c5cdca64196d8890a9a4e1935d000d88323",
-      "size_bytes": 974,
+      "sha256": "a4614916ab340435b09ced479bcbb70590bfbf8ae54962fdacc2bebc62358052",
+      "size_bytes": 1299,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -156,7 +156,7 @@
     },
     {
       "path": "project.json",
-      "sha256": "ddcdbcd6148e199cdba8b4e6894bdc8ef97807702d04c0c4e2a862ab3729f6ad",
+      "sha256": "b194bd17080a1aa894152307d2a040b85408aa183147eaa50961b85c08db4650",
       "size_bytes": 1071,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
@@ -186,8 +186,8 @@
     },
     {
       "path": "publication-policy.json",
-      "sha256": "e09a8a45c744e0463e4a0a54460d67045062b6376a3d42341960e8f1ae8c3735",
-      "size_bytes": 6071,
+      "sha256": "dc5c1d9ded7afdc88594c7cceff4311050b20ad272d5fafe1f2d0b5025cd62ef",
+      "size_bytes": 8054,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -243,6 +243,116 @@
       "verification_status": "REVIEWED_CONTENT",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
       "rights_note": "Original project materials; existing rights notice retained"
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/README.md",
+      "sha256": "db5663ab763c5e9a50cb7543ff5ba9edeec561dec91f5bf291ecc7b4a88452e2",
+      "size_bytes": 2433
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/RIGHTS_AND_ATTRIBUTION.md",
+      "sha256": "a3d27f046c8fbe84598e2d8953b332efa0e505e946637d019fe1fe403273b0fd",
+      "size_bytes": 1475
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/core-manifest.json",
+      "sha256": "965cce3f7ec363b52e8a3a261f83557ba436104982b40854b57a9b993968451c",
+      "size_bytes": 907
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/core/browser_driver.py",
+      "sha256": "1dc1c62db8f77944b5e7df77c24c96b4933a9bd58290727b76201d855831b405",
+      "size_bytes": 3397
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/core/experience_store.py",
+      "sha256": "4f6fd705f37a86bca0dfa5fcb6ee94fc072a9bd0f7d1c287fe04b0624c9e8b3d",
+      "size_bytes": 669
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/core/native_workflow.py",
+      "sha256": "5726c852895af5f9eb0c92b018c45eb3946ccf7ca149cf64c3c1dcc6bf3a1f2c",
+      "size_bytes": 26641
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/core/numeric_validation.py",
+      "sha256": "d89538199c040711d41a03c6bbf5136b9bc1e93516a87975831b94ef05cc35ed",
+      "size_bytes": 1180
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/core/tracking_core.py",
+      "sha256": "6ce1789c2f663e6dfe71d0f69a649b7483516c9b2c1bcb856b185dfb13c696ca",
+      "size_bytes": 990
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/index.html",
+      "sha256": "7200c3e82deb7a12a4433239354a6b2c20445e3617e055083d6fe9d8a1ee7be3",
+      "size_bytes": 4851
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/page.js",
+      "sha256": "318eb6edc755d4678236de7b365754bc9423026171bfe95bf7c88e938bc56769",
+      "size_bytes": 7961
+    },
+    {
+      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "TESTED_SOURCE_MATCH",
+      "claim_category": "BOUNDED_BROWSER_DEMO",
+      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
+      "path": "web/worker.js",
+      "sha256": "0cd54e004e9c86eb05425be7eef652171a3aa91cd4f9bee9d67902e51ba3dad3",
+      "size_bytes": 3408
     }
   ]
 }
