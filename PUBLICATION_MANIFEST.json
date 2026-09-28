@@ -56,11 +56,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "7687d94f21d4437313176471f89587f554463aeda0c3c106de78817d400e9a3b",
-      "size_bytes": 5031,
+      "sha256": "5bacaa94e6eeed5188a774cc79c819934bd37fae0bd089389904004a383e1334",
+      "size_bytes": 5072,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "REVIEWED_CONTENT",
+      "verification_status": "LOCAL_TESTS_PASS_OWNER_REVIEW_PENDING",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
       "rights_note": "Original project materials; existing rights notice retained"
     },
@@ -156,8 +156,8 @@
     },
     {
       "path": "project.json",
-      "sha256": "b194bd17080a1aa894152307d2a040b85408aa183147eaa50961b85c08db4650",
-      "size_bytes": 1071,
+      "sha256": "56a7efe9400c6c74b66db1fd573a2f2c042be1b8c88a1de5c22e784507960ea7",
+      "size_bytes": 1111,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "TESTED",
@@ -186,11 +186,11 @@
     },
     {
       "path": "publication-policy.json",
-      "sha256": "dc5c1d9ded7afdc88594c7cceff4311050b20ad272d5fafe1f2d0b5025cd62ef",
-      "size_bytes": 8054,
+      "sha256": "bbc93c783e60130cf2a010a9e265229b6bf23bed15624947b97df81ad59550d5",
+      "size_bytes": 8350,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "REVIEWED_CONTENT",
+      "verification_status": "LOCAL_TESTS_PASS_OWNER_REVIEW_PENDING",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
       "rights_note": "Original project materials; existing rights notice retained"
     },
@@ -235,6 +235,16 @@
       "rights_note": "Original project materials; existing rights notice retained"
     },
     {
+      "path": "test_web_numeric.py",
+      "sha256": "b5b4689826e1d2a588668c4247efe75bb0611ae599629305dbb559d91d7091ff",
+      "size_bytes": 888,
+      "source_artifact": "PUBLIC-P02-LOCAL-REGRESSION-CANDIDATE",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "LOCAL_TESTS_PASS_OWNER_REVIEW_PENDING",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "New public P02 test candidate; owner review pending"
+    },
+    {
       "path": "tools/publication_guard.py",
       "sha256": "8530e5965ad2a2ff965f99a7801acfd09115ff55f68cdeee4f527404f6a28857",
       "size_bytes": 6433,
@@ -247,12 +257,12 @@
     {
       "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
+      "verification_status": "LOCAL_TESTS_PASS_OWNER_REVIEW_PENDING",
       "claim_category": "BOUNDED_BROWSER_DEMO",
       "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/README.md",
-      "sha256": "db5663ab763c5e9a50cb7543ff5ba9edeec561dec91f5bf291ecc7b4a88452e2",
-      "size_bytes": 2433
+      "sha256": "583c21700282cfaf2b44c0ce36b87a8ad653958a443655f71937824d4a9101b1",
+      "size_bytes": 2983
     },
     {
       "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
