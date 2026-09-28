@@ -39,3 +39,13 @@ comparison and contract vector results are kept in the local review evidence.
 See [rights and attribution](RIGHTS_AND_ATTRIBUTION.md) for this bounded
 native-core subset and its separately loaded browser runtime.
 The existing command-line demo and its historical evidence remain separate.
+
+## Reproducible numeric edge case
+
+Choose **Mean** and enter `1e100, 1, -1e100`. The browser core returns
+`0.3333333333333333` with `ACCEPT`: the small middle term survives cancellation
+of the large terms. A naive left-to-right sum would produce zero for this
+ordering, which the separate numeric validator rejects. The standard-library
+regression check runs with `python -m unittest test_web_numeric -v` from the
+repository root. This tests a bounded numeric contract; it does not measure
+language-model routing or general floating-point accuracy.

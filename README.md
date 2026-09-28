@@ -17,7 +17,7 @@ python demo.py self-test
 
 The demo runs in an automatically cleaned temporary directory. It selects a deterministic numeric tool, computes a mean, checks it against an exact oracle, commits a validation and event to SQLite, deliberately exits with code 73, then resumes export twice. The coordinator expects that worker exit; the overall self-test returns success.
 
-**Test scope:** 16 inherited evidence-library tests, 4 portable-demo tests and 6 planning-metadata checks. These are isolated checks, not a percentage of production reliability or Unreal gameplay tests. See [current verification](project.json); [earlier results](evidence/verification.json) remain historical.
+**Test scope:** 16 inherited evidence-library tests, 4 portable-demo tests, 6 planning-metadata checks and 1 browser-core numeric regression check. These are isolated checks, not a percentage of production reliability or Unreal gameplay tests. See [current verification](project.json); [earlier results](evidence/verification.json) remain historical.
 
 ## What I owned / how AI helped
 
