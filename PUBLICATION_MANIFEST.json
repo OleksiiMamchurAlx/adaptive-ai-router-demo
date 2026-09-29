@@ -56,8 +56,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "7687d94f21d4437313176471f89587f554463aeda0c3c106de78817d400e9a3b",
-      "size_bytes": 5031,
+      "sha256": "5bacaa94e6eeed5188a774cc79c819934bd37fae0bd089389904004a383e1334",
+      "size_bytes": 5072,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -156,7 +156,7 @@
     },
     {
       "path": "project.json",
-      "sha256": "b194bd17080a1aa894152307d2a040b85408aa183147eaa50961b85c08db4650",
+      "sha256": "4bdbb51ef61e578ad87d452657a9debbe9077187c38d43c04421b2d391c5beb3",
       "size_bytes": 1071,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
@@ -186,8 +186,8 @@
     },
     {
       "path": "publication-policy.json",
-      "sha256": "dc5c1d9ded7afdc88594c7cceff4311050b20ad272d5fafe1f2d0b5025cd62ef",
-      "size_bytes": 8054,
+      "sha256": "372824ae8658c3f50763ac9e8e2ce33f820bb22b7d6707a2a3ea43ae8d2a55b9",
+      "size_bytes": 8176,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -235,6 +235,16 @@
       "rights_note": "Original project materials; existing rights notice retained"
     },
     {
+      "path": "test_web_numeric.py",
+      "sha256": "b5b4689826e1d2a588668c4247efe75bb0611ae599629305dbb559d91d7091ff",
+      "size_bytes": 888,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
+    },
+    {
       "path": "tools/publication_guard.py",
       "sha256": "8530e5965ad2a2ff965f99a7801acfd09115ff55f68cdeee4f527404f6a28857",
       "size_bytes": 6433,
@@ -245,114 +255,114 @@
       "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/README.md",
-      "sha256": "db5663ab763c5e9a50cb7543ff5ba9edeec561dec91f5bf291ecc7b4a88452e2",
-      "size_bytes": 2433
+      "sha256": "583c21700282cfaf2b44c0ce36b87a8ad653958a443655f71937824d4a9101b1",
+      "size_bytes": 2983,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/RIGHTS_AND_ATTRIBUTION.md",
       "sha256": "a3d27f046c8fbe84598e2d8953b332efa0e505e946637d019fe1fe403273b0fd",
-      "size_bytes": 1475
+      "size_bytes": 1475,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/core-manifest.json",
       "sha256": "965cce3f7ec363b52e8a3a261f83557ba436104982b40854b57a9b993968451c",
-      "size_bytes": 907
+      "size_bytes": 907,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/core/browser_driver.py",
       "sha256": "1dc1c62db8f77944b5e7df77c24c96b4933a9bd58290727b76201d855831b405",
-      "size_bytes": 3397
+      "size_bytes": 3397,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/core/experience_store.py",
       "sha256": "4f6fd705f37a86bca0dfa5fcb6ee94fc072a9bd0f7d1c287fe04b0624c9e8b3d",
-      "size_bytes": 669
+      "size_bytes": 669,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/core/native_workflow.py",
       "sha256": "5726c852895af5f9eb0c92b018c45eb3946ccf7ca149cf64c3c1dcc6bf3a1f2c",
-      "size_bytes": 26641
+      "size_bytes": 26641,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/core/numeric_validation.py",
       "sha256": "d89538199c040711d41a03c6bbf5136b9bc1e93516a87975831b94ef05cc35ed",
-      "size_bytes": 1180
+      "size_bytes": 1180,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/core/tracking_core.py",
       "sha256": "6ce1789c2f663e6dfe71d0f69a649b7483516c9b2c1bcb856b185dfb13c696ca",
-      "size_bytes": 990
+      "size_bytes": 990,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/index.html",
       "sha256": "7200c3e82deb7a12a4433239354a6b2c20445e3617e055083d6fe9d8a1ee7be3",
-      "size_bytes": 4851
+      "size_bytes": 4851,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/page.js",
       "sha256": "318eb6edc755d4678236de7b365754bc9423026171bfe95bf7c88e938bc56769",
-      "size_bytes": 7961
+      "size_bytes": 7961,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     },
     {
-      "source_artifact": "OWNER-REVIEWED-NATIVE-CORE-SUBSET",
-      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
-      "verification_status": "TESTED_SOURCE_MATCH",
-      "claim_category": "BOUNDED_BROWSER_DEMO",
-      "rights_note": "Owner-authorized bounded public subset; Pyodide is separately loaded under MPL-2.0",
       "path": "web/worker.js",
       "sha256": "0cd54e004e9c86eb05425be7eef652171a3aa91cd4f9bee9d67902e51ba3dad3",
-      "size_bytes": 3408
+      "size_bytes": 3408,
+      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Original project materials; existing rights notice retained"
     }
   ]
 }
