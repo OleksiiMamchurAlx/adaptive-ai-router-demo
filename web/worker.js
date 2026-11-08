@@ -39,6 +39,14 @@ self.onmessage = async event => {
   let mounted = false;
   try {
     pyodide = await loadPyodide({indexURL: INDEX_URL});
+    if (action === 'route-example') {
+      await loadReviewedCore(pyodide);
+      const response = pyodide.runPython(
+        'import json\nfrom route_example import run_example\njson.dumps(run_example(), allow_nan=False)'
+      );
+      self.postMessage({ok:true, result:{...JSON.parse(response), runtime:RUNTIME}});
+      return;
+    }
     pyodide.FS.mkdir('/data');
     pyodide.FS.mount(pyodide.FS.filesystems.IDBFS, {}, '/data');
     mounted = true;

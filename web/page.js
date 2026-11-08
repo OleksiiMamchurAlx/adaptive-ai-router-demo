@@ -59,24 +59,28 @@ function prepareRevision(input) {
   return {session_id:session.session_id, revision:session.revision, ...input};
 }
 
+function requestWorker(action, payload) {
+  return new Promise((resolve, reject) => {
+    const worker = new Worker('./worker.js', {type:'module'});
+    const timer = setTimeout(() => { worker.terminate(); reject(new Error('Execution timeout.')); }, 120000);
+    worker.onmessage = event => {
+      clearTimeout(timer);
+      worker.terminate();
+      event.data.ok ? resolve(event.data.result) : reject(new Error(event.data.reason));
+    };
+    worker.onerror = event => {
+      clearTimeout(timer);
+      worker.terminate();
+      reject(new Error(event.message || 'Browser worker failed.'));
+    };
+    worker.postMessage({action, payload});
+  });
+}
+
 async function workerAction(action, payload) {
   if (!navigator.locks?.request) throw new Error('Web Locks unavailable: safe two-tab storage is blocked.');
   return navigator.locks.request('adaptive-router-public-demo-idbfs', {mode:'exclusive'},
-    () => new Promise((resolve, reject) => {
-      const worker = new Worker('./worker.js', {type:'module'});
-      const timer = setTimeout(() => { worker.terminate(); reject(new Error('Execution timeout.')); }, 120000);
-      worker.onmessage = event => {
-        clearTimeout(timer);
-        worker.terminate();
-        event.data.ok ? resolve(event.data.result) : reject(new Error(event.data.reason));
-      };
-      worker.onerror = event => {
-        clearTimeout(timer);
-        worker.terminate();
-        reject(new Error(event.message || 'Browser worker failed.'));
-      };
-      worker.postMessage({action, payload});
-    }));
+    () => requestWorker(action, payload));
 }
 
 function render(receipt) {
@@ -181,6 +185,21 @@ channel.onmessage = event => {
 };
 channel.postMessage({type:'hello', session_id:session.session_id, page_id:pageId});
 for (const id of actionIds) $(id).addEventListener('click', () => act(id));
+$('route-example').addEventListener('click', async () => {
+  $('route-example').disabled = true;
+  $('route-message').textContent = 'Running the fixed task with the pinned Python runtime…';
+  $('route-result').textContent = '—';
+  try {
+    const result = await requestWorker('route-example', {});
+    const accepted = result.runs.filter(run => run.verdict === 'ACCEPT').length;
+    $('route-message').textContent = `Validated requests: ${accepted} of ${result.runs.length}.`;
+    $('route-result').textContent = JSON.stringify(result, null, 2);
+  } catch (error) {
+    $('route-message').textContent = `Route example blocked. ${String(error.message || error).slice(0, 240)}`;
+  } finally {
+    $('route-example').disabled = false;
+  }
+});
 $('receipt').addEventListener('click', () => {
   if (!lastReceipt) { message('Run or inspect a task before downloading a receipt.'); return; }
   const body = JSON.stringify({...lastReceipt, accepted_input:JSON.parse(session.lastInput)}, null, 2);

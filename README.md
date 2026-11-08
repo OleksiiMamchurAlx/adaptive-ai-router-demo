@@ -17,7 +17,19 @@ python demo.py self-test
 
 The demo runs in an automatically cleaned temporary directory. It selects a deterministic numeric tool, computes a mean, checks it against an exact oracle, commits a validation and event to SQLite, deliberately exits with code 73, then resumes export twice. The coordinator expects that worker exit; the overall self-test returns success.
 
-**Test scope:** 16 inherited evidence-library tests, 4 portable-demo tests, 6 planning-metadata checks and 1 browser-core numeric regression check. These are isolated checks, not a percentage of production reliability or Unreal gameplay tests. See [current verification](project.json); [earlier results](evidence/verification.json) remain historical.
+**Test scope:** 16 inherited evidence-library tests, 4 portable-demo tests, 6 planning-metadata checks, 1 browser-core numeric regression check and 6 interchangeable-route tests. These are isolated checks, not a percentage of production reliability or Unreal gameplay tests. See [current verification](project.json). [Earlier results](evidence/verification.json) remain historical.
+
+## Interchangeable routes
+
+Two deterministic implementations of one read-only contract return the IDs of open items in their supplied order. The scheduler normally assigns three requests to Python and one to in-memory SQLite. A separate exact validator checks the answer from either route. An isolated route failure can switch to the other implementation. A shared memory or validator failure stops the task. A recovering route needs two good probes before it rejoins the rotation.
+
+```console
+python web/core/route_example.py
+python -m unittest test_route_alternation -v
+python route_sweep.py
+```
+
+[Signed scenario sweep](evidence/route-alternation.json) records 1,048,576 synthetic combinations of five admission gates across four simulated routes. The sweep compares the selector with an independent oracle. The runnable example uses two real deterministic implementations of the open-item contract. Neither test measures production uptime, model quality or cloud savings. The [browser demo](web/index.html) also runs the four-request example.
 
 ## What I owned / how AI helped
 

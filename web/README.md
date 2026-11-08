@@ -40,6 +40,10 @@ See [rights and attribution](RIGHTS_AND_ATTRIBUTION.md) for this bounded
 native-core subset and its separately loaded browser runtime.
 The existing command-line demo and its historical evidence remain separate.
 
+## Interchangeable route example
+
+Click **Run the four-request example** to execute a fixed list of items through the Python and in-memory SQLite implementations. The reviewed rotation chooses Python, Python, Python and SQLite. Each answer is checked against the same exact open-ID contract. The route state resets for each batch and does not use the numeric demo's persistent storage.
+
 ## Reproducible numeric edge case
 
 Choose **Mean** and enter `1e100, 1, -1e100`. The browser core returns

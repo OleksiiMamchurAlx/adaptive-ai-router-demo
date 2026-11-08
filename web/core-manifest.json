@@ -21,7 +21,23 @@
     {
       "name": "tracking_core.py",
       "sha256": "6ce1789c2f663e6dfe71d0f69a649b7483516c9b2c1bcb856b185dfb13c696ca"
+    },
+    {
+      "name": "route_cells.py",
+      "sha256": "f7fdd426749f96cca4aa73757f20d0d4cc6d125ee15d3cc2d716ea25cc3620b8"
+    },
+    {
+      "name": "open_items_routes.py",
+      "sha256": "3a9a061fdbc329a5a85c6d9486357facbea55af614e1cf0fad8ee0de47ed327a"
+    },
+    {
+      "name": "result_validation.py",
+      "sha256": "d78bfe2984d86d3ed42ca8f6118b344ea46b14e6f2051990080143cd256e5635"
+    },
+    {
+      "name": "route_example.py",
+      "sha256": "29fcd7f5796ed91f39ec95e7c61a4fc92ade438cbc8a2047041685c8fd032809"
     }
   ],
-  "source_claim": "native_workflow.py and numeric_validation.py are byte-identical to the accepted local native candidate; calculate is a verbatim function extraction"
+  "source_claim": "native_workflow.py and numeric_validation.py are byte-identical to the accepted local native candidate; calculate is a verbatim function extraction; route_cells.py, open_items_routes.py and result_validation.py match the isolated interchangeable-route candidate byte for byte"
 }

@@ -1,0 +1,67 @@
+{
+  "schema": "router.route-alternation-signed-sweep.v1",
+  "scope": "offline_boolean_scenarios_four_synthetic_independent_routes",
+  "equation_family": "x^20 + sum(s_k * x^k for k=0..19), s_k in {-1,+1}",
+  "coefficient_mapping": {
+    "bit": "4 * gate_index + route_index",
+    "negative": "gate closed",
+    "positive": "gate open",
+    "gate_order": [
+      "contract",
+      "policy",
+      "ready",
+      "domain",
+      "resources"
+    ]
+  },
+  "selector_sha256": "f7fdd426749f96cca4aa73757f20d0d4cc6d125ee15d3cc2d716ea25cc3620b8",
+  "scenarios_checked": 1048576,
+  "scenarios_with_a_route": 125055,
+  "scenarios_with_no_route": 923521,
+  "scenario_counts_by_eligible_routes": {
+    "0": 923521,
+    "1": 119164,
+    "2": 5766,
+    "3": 124,
+    "4": 1
+  },
+  "chosen_counts_by_route_index": [
+    31248,
+    30256,
+    31551,
+    32000
+  ],
+  "oracle_mismatches": 0,
+  "result_sha256": "e14b1caeeeef8601731c7a42053753efa7f045f98c6c20585ec60102664f2f2b",
+  "fairness": {
+    "stable_eligible_sets_checked": 15,
+    "requests_per_set": 4096,
+    "all_four_fixed_priority_counts": [
+      4096,
+      0,
+      0,
+      0
+    ],
+    "all_four_alternating_counts": [
+      1024,
+      1024,
+      1024,
+      1024
+    ],
+    "max_count_gap_among_eligible_routes": 1,
+    "weighted_schedule": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "weighted_schedule_counts": [
+      2048,
+      1024,
+      1024
+    ]
+  },
+  "models_called": 0,
+  "external_calls": 0,
+  "elapsed_seconds": 2.103
+}
