@@ -6,4 +6,6 @@ The evidence library and tests were developed in this independent portfolio proj
 
 The original command-line demo excludes the Adaptive AI Router runtime. The bounded online `web/` extension has a separate [rights and provenance note](web/RIGHTS_AND_ATTRIBUTION.md): it includes a limited native workflow source subset authorized for this release by the owner on 2026-09-26. The full provider runtime, model weights, credentials and private traces remain excluded. This owner authorization does not establish the origin of third-party material or grant a general redistribution license for other Router files.
 
+On 2026-11-08 the owner authorized the tested interchangeable-route demonstration. This release adds the exact selector, two deterministic route implementations and their exact validator from the isolated candidate, plus the standalone demonstration and synthetic verification. It retains the same rights boundaries.
+
 Third-party names identify technologies only; no affiliation or endorsement is implied. If a future contribution introduces external code, review its provenance and license before including it.

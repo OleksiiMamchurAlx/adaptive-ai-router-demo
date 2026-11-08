@@ -60,6 +60,15 @@
     <h2>Transitions and checks</h2><pre id="events">—</pre>
   </section>
 
+  <section class="panel" aria-labelledby="alternation">
+    <h2 id="alternation">Try interchangeable routes</h2>
+    <p>Run four copies of the same fixed, read-only task. Python and in-memory SQLite both return the open item IDs in input order. The default rotation gives Python three slots and SQLite one. A separate exact validator checks every answer.</p>
+    <div class="buttons"><button id="route-example">Run the four-request example</button></div>
+    <p id="route-message" role="status">No route example has run.</p>
+    <pre id="route-result">—</pre>
+    <p>This example runs separately from the numeric demo. Its route state is in memory and resets for each batch.</p>
+  </section>
+
   <section class="note" id="limits">
     <h2>Scope and limits</h2>
     <p>“Simulate interruption” injects a test-only stop after the numeric effect is committed, before validation. Resume starts a new browser worker and reuses that committed effect. It does not stop the installed Router. This page needs session storage and IndexedDB; it blocks an action if either cannot confirm its write. The browser can later evict or clear saved data; this is not Windows service recovery. Two tabs are serialized through Web Locks. No language model, provider key, account, analytics or server-side task storage is used.</p>

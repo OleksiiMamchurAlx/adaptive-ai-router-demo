@@ -5,3 +5,5 @@ This bounded `web/` release includes selected source from the local Adaptive AI 
 The worker loads Pyodide 314.0.7 from the versioned jsDelivr URL at runtime. Pyodide is developed by the Pyodide contributors under the Mozilla Public License 2.0; see the [official project license](https://github.com/pyodide/pyodide/blob/314.0.7/LICENSE) and [project description](https://pyodide.org/en/stable/project/about.html). Pyodide binaries are not copied into this repository. This release requires network access to its dependencies; offline operation is not supported.
 
 The full Adaptive AI Router provider runtime, model weights, credentials, private traces and active databases are excluded. The code in this demo has no additional open-source redistribution license selected. Publication alone does not grant MIT, GPL or another blanket license for these files.
+
+The 2026-11-08 owner-authorized addition contains three byte-identical modules from the isolated candidate: `route_cells.py`, `open_items_routes.py` and `result_validation.py`. `route_example.py` runs the fixed public example through those modules. The public hash manifest covers all four files.

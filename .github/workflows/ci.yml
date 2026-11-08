@@ -21,5 +21,9 @@ jobs:
           python-version: '3.11'
       - name: Unit and recovery checks
         run: python -m unittest discover -v
+      - name: Run hosted interchangeable-route example
+        run: |
+          python -B web/core/route_example.py
+          python -c "from hashlib import sha256; from pathlib import Path; print('route_cells_sha256=' + sha256(Path('web/core/route_cells.py').read_bytes()).hexdigest())"
       - name: Publication schema, manifest, file and claim gates
         run: python tools/publication_guard.py .
