@@ -16,8 +16,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "073f39e1b171f93616360d7454dbef5930236d8f2893cdb688ed3cb219fd2e50",
-      "size_bytes": 696,
+      "sha256": "801720e4565ab3f09040e624a873684dafbe54418cc46308aa5ca1ec892b9df8",
+      "size_bytes": 984,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -56,8 +56,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "5bacaa94e6eeed5188a774cc79c819934bd37fae0bd089389904004a383e1334",
-      "size_bytes": 5072,
+      "sha256": "2b6384f6e0b3e998e5816e8052fe2c54c7b533c78547c6042132f6f8a399cc4e",
+      "size_bytes": 6151,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -66,8 +66,8 @@
     },
     {
       "path": "RIGHTS_AND_ATTRIBUTION.md",
-      "sha256": "a4614916ab340435b09ced479bcbb70590bfbf8ae54962fdacc2bebc62358052",
-      "size_bytes": 1299,
+      "sha256": "465253d5c1f013ae445d5c42b4e7b4936f3393779525192be1ca706733efe2ce",
+      "size_bytes": 1617,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -135,6 +135,16 @@
       "rights_note": "Original project materials; existing rights notice retained"
     },
     {
+      "path": "evidence/route-alternation.json",
+      "source_artifact": "TESTED-INTERCHANGEABLE-ROUTE-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Owner-authorized exact deterministic demo subset",
+      "sha256": "c349836eae366ff4fefd33b011363592460f7255fa2a407c77c0ff425454f5c6",
+      "size_bytes": 1493
+    },
+    {
       "path": "evidence/unit-tests.txt",
       "sha256": "f3a6120ab0a3a0b9c4c1130e0cc2fe5215f488ef754e2f6f1aadbc44c4bbe2cb",
       "size_bytes": 1825,
@@ -156,7 +166,7 @@
     },
     {
       "path": "project.json",
-      "sha256": "4bdbb51ef61e578ad87d452657a9debbe9077187c38d43c04421b2d391c5beb3",
+      "sha256": "e1aee37a984c95068becb83a6c4d3d5b895d2d6de3b02c0ee56a8122073fdbba",
       "size_bytes": 1071,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
@@ -186,13 +196,23 @@
     },
     {
       "path": "publication-policy.json",
-      "sha256": "372824ae8658c3f50763ac9e8e2ce33f820bb22b7d6707a2a3ea43ae8d2a55b9",
-      "size_bytes": 8176,
+      "sha256": "236f67c6955e72cf0ed5e2f3f297a0f19c9c5d0680513b923cb4d2dd4a993289",
+      "size_bytes": 9364,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
       "rights_note": "Original project materials; existing rights notice retained"
+    },
+    {
+      "path": "route_sweep.py",
+      "source_artifact": "TESTED-INTERCHANGEABLE-ROUTE-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Owner-authorized exact deterministic demo subset",
+      "sha256": "6f08f82dad7ad024802b3ba72bc2779ed5395cbf6f7e8bc3da3a0678e01e1d3f",
+      "size_bytes": 5597
     },
     {
       "path": "schema.sql",
@@ -235,6 +255,16 @@
       "rights_note": "Original project materials; existing rights notice retained"
     },
     {
+      "path": "test_route_alternation.py",
+      "source_artifact": "TESTED-INTERCHANGEABLE-ROUTE-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Owner-authorized exact deterministic demo subset",
+      "sha256": "c35a5ed89372b3def1d475bb40c22c1b0cd1cd47582727f0f36f6819fe46b588",
+      "size_bytes": 2999
+    },
+    {
       "path": "test_web_numeric.py",
       "sha256": "b5b4689826e1d2a588668c4247efe75bb0611ae599629305dbb559d91d7091ff",
       "size_bytes": 888,
@@ -256,8 +286,8 @@
     },
     {
       "path": "web/README.md",
-      "sha256": "583c21700282cfaf2b44c0ce36b87a8ad653958a443655f71937824d4a9101b1",
-      "size_bytes": 2983,
+      "sha256": "ef0d8fe9239a4792280a17b8e989bca234a9a53db7b7fb481fee00046d07a316",
+      "size_bytes": 3370,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -266,8 +296,8 @@
     },
     {
       "path": "web/RIGHTS_AND_ATTRIBUTION.md",
-      "sha256": "a3d27f046c8fbe84598e2d8953b332efa0e505e946637d019fe1fe403273b0fd",
-      "size_bytes": 1475,
+      "sha256": "9b2a69b8c9468d43435cf89a147d35dee8dde01aa4c8fbb61abc82fc5fde9dc4",
+      "size_bytes": 1773,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -276,8 +306,8 @@
     },
     {
       "path": "web/core-manifest.json",
-      "sha256": "965cce3f7ec363b52e8a3a261f83557ba436104982b40854b57a9b993968451c",
-      "size_bytes": 907,
+      "sha256": "18a6c28fd2cc4aca0ad8f4bf4cbdf117fb6aa487577c073d2d0052cb1443b9bc",
+      "size_bytes": 1561,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -325,6 +355,46 @@
       "rights_note": "Original project materials; existing rights notice retained"
     },
     {
+      "path": "web/core/open_items_routes.py",
+      "source_artifact": "TESTED-INTERCHANGEABLE-ROUTE-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Owner-authorized exact deterministic demo subset",
+      "sha256": "3a9a061fdbc329a5a85c6d9486357facbea55af614e1cf0fad8ee0de47ed327a",
+      "size_bytes": 5109
+    },
+    {
+      "path": "web/core/result_validation.py",
+      "source_artifact": "TESTED-INTERCHANGEABLE-ROUTE-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Owner-authorized exact deterministic demo subset",
+      "sha256": "d78bfe2984d86d3ed42ca8f6118b344ea46b14e6f2051990080143cd256e5635",
+      "size_bytes": 4395
+    },
+    {
+      "path": "web/core/route_cells.py",
+      "source_artifact": "TESTED-INTERCHANGEABLE-ROUTE-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Owner-authorized exact deterministic demo subset",
+      "sha256": "f7fdd426749f96cca4aa73757f20d0d4cc6d125ee15d3cc2d716ea25cc3620b8",
+      "size_bytes": 1588
+    },
+    {
+      "path": "web/core/route_example.py",
+      "source_artifact": "TESTED-INTERCHANGEABLE-ROUTE-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Owner-authorized exact deterministic demo subset",
+      "sha256": "29fcd7f5796ed91f39ec95e7c61a4fc92ade438cbc8a2047041685c8fd032809",
+      "size_bytes": 484
+    },
+    {
       "path": "web/core/tracking_core.py",
       "sha256": "6ce1789c2f663e6dfe71d0f69a649b7483516c9b2c1bcb856b185dfb13c696ca",
       "size_bytes": 990,
@@ -336,8 +406,8 @@
     },
     {
       "path": "web/index.html",
-      "sha256": "7200c3e82deb7a12a4433239354a6b2c20445e3617e055083d6fe9d8a1ee7be3",
-      "size_bytes": 4851,
+      "sha256": "a0c9c5dff140ea902c35662c66c3edf3c53ff44342aabe34e6e6c5ffc96430dd",
+      "size_bytes": 5546,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -346,8 +416,8 @@
     },
     {
       "path": "web/page.js",
-      "sha256": "318eb6edc755d4678236de7b365754bc9423026171bfe95bf7c88e938bc56769",
-      "size_bytes": 7961,
+      "sha256": "327d6cc406ea1154c4e8715c1415b8af97df8dbcf427cef4d5ebc936849b6e8e",
+      "size_bytes": 8763,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
@@ -356,8 +426,8 @@
     },
     {
       "path": "web/worker.js",
-      "sha256": "0cd54e004e9c86eb05425be7eef652171a3aa91cd4f9bee9d67902e51ba3dad3",
-      "size_bytes": 3408,
+      "sha256": "d7987d2ef08b186c5ad01a8ed66115268bd055ef597235c2e953e79f5adf5cd4",
+      "size_bytes": 3747,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
