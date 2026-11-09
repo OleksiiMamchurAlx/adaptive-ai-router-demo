@@ -1,0 +1,121 @@
+{
+  "schema": "router.public-flow-benchmark.v1",
+  "workload": "Synthetic open-item selection with exact ordered-result checks",
+  "windows": {
+    "scope": "Isolated in-process Windows MCP calls, using the pinned release and SQLite 3.53.4",
+    "paired_processes": 4,
+    "measured_calls_per_input_size_per_schedule": 640,
+    "windows_process_cpu_scope": "CPU time for measured loops including validation; excludes warmup and startup",
+    "windows_memory_scope": "Peak working set over each isolated process lifetime, including startup; schedule allocation is not isolated",
+    "cases": {
+      "32": {
+        "equal_1_to_1": {
+          "accepted": 640,
+          "median_ms": 0.333,
+          "p95_ms": 0.451,
+          "cpu_ms_measured_loops": 171.875,
+          "python_results": 320,
+          "sqlite_results": 320
+        },
+        "weighted_3_to_1": {
+          "accepted": 640,
+          "median_ms": 0.242,
+          "p95_ms": 0.403,
+          "cpu_ms_measured_loops": 187.5,
+          "python_results": 480,
+          "sqlite_results": 160
+        }
+      },
+      "128": {
+        "equal_1_to_1": {
+          "accepted": 640,
+          "median_ms": 0.47,
+          "p95_ms": 0.61,
+          "cpu_ms_measured_loops": 281.25,
+          "python_results": 320,
+          "sqlite_results": 320
+        },
+        "weighted_3_to_1": {
+          "accepted": 640,
+          "median_ms": 0.329,
+          "p95_ms": 0.547,
+          "cpu_ms_measured_loops": 218.75,
+          "python_results": 480,
+          "sqlite_results": 160
+        }
+      },
+      "1000": {
+        "equal_1_to_1": {
+          "accepted": 640,
+          "median_ms": 1.607,
+          "p95_ms": 1.942,
+          "cpu_ms_measured_loops": 1000.0,
+          "python_results": 320,
+          "sqlite_results": 320
+        },
+        "weighted_3_to_1": {
+          "accepted": 640,
+          "median_ms": 1.102,
+          "p95_ms": 1.861,
+          "cpu_ms_measured_loops": 828.125,
+          "python_results": 480,
+          "sqlite_results": 160
+        }
+      }
+    },
+    "lifetime_peak_working_set_mib": {
+      "equal_1_to_1": {
+        "min": 72.54,
+        "median": 72.78,
+        "max": 73.08
+      },
+      "weighted_3_to_1": {
+        "min": 72.62,
+        "median": 72.98,
+        "max": 73.28
+      }
+    }
+  },
+  "cloud": {
+    "scope": "Hosted client round-trip latency including transport, Worker and D1",
+    "fixture": "Four synthetic 128-item jobs per request, checked against exact outputs",
+    "alternating_order_pairs": 24,
+    "equal_1_to_1": {
+      "round_trip_median_ms": 146.94,
+      "round_trip_p95_ms": 181.56,
+      "worker_elapsed_median_ms": 100.5,
+      "worker_elapsed_p95_ms": 110,
+      "accepted_jobs": 96,
+      "successful_d1_reads_per_request": 2
+    },
+    "weighted_3_to_1": {
+      "round_trip_median_ms": 92.17,
+      "round_trip_p95_ms": 116.47,
+      "worker_elapsed_median_ms": 49,
+      "worker_elapsed_p95_ms": 56,
+      "accepted_jobs": 96,
+      "successful_d1_reads_per_request": 1
+    },
+    "weighted_faster_pairs": 24,
+    "d1_read_reduction_percent": 50,
+    "planning_check": {
+      "stages": [
+        "input",
+        "admission",
+        "routing",
+        "execution",
+        "verification",
+        "receipt"
+      ],
+      "proposed_route": "javascript",
+      "dispatch": false
+    },
+    "built_in_self_review": {
+      "pairs": 4,
+      "accepted_jobs_per_schedule": 16,
+      "equal_d1_reads": 8,
+      "weighted_d1_reads": 4,
+      "policy_changed": false
+    }
+  }
+}

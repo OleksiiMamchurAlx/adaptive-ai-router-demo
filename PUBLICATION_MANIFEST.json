@@ -166,7 +166,7 @@
     },
     {
       "path": "project.json",
-      "sha256": "e1aee37a984c95068becb83a6c4d3d5b895d2d6de3b02c0ee56a8122073fdbba",
+      "sha256": "56392c6c6c86af6166286939e893ad5f16a9b07de87466613754264ee8e7ba84",
       "size_bytes": 1071,
       "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
@@ -196,9 +196,9 @@
     },
     {
       "path": "publication-policy.json",
-      "sha256": "236f67c6955e72cf0ed5e2f3f297a0f19c9c5d0680513b923cb4d2dd4a993289",
-      "size_bytes": 9364,
-      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sha256": "96585d3624164903c7c668697f1c91a63ee0a4a1353746bd9bcae99377502e6d",
+      "size_bytes": 9633,
+      "source_artifact": "SANITIZED-SYNTHETIC-BENCHMARK-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
@@ -405,10 +405,20 @@
       "rights_note": "Original project materials; existing rights notice retained"
     },
     {
+      "path": "web/flow-benchmark.json",
+      "source_artifact": "SANITIZED-SYNTHETIC-BENCHMARK-PROJECTION",
+      "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
+      "verification_status": "REVIEWED_CONTENT",
+      "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
+      "rights_note": "Owner-authorized aggregate of verified synthetic measurements",
+      "sha256": "e8b74bd2093a97f467b7ea5f827b303c1dc331f62ec7f9af60d26918262f8a9f",
+      "size_bytes": 3519
+    },
+    {
       "path": "web/index.html",
-      "sha256": "a0c9c5dff140ea902c35662c66c3edf3c53ff44342aabe34e6e6c5ffc96430dd",
-      "size_bytes": 5546,
-      "source_artifact": "REVIEWED-PUBLIC-PROJECTION",
+      "sha256": "4e1eacc3b81ba8adb7430081e6f935dcba6932d5e6224f1774fdfb8e8fcec5fd",
+      "size_bytes": 7347,
+      "source_artifact": "SANITIZED-SYNTHETIC-BENCHMARK-PROJECTION",
       "sanitization_status": "ALLOWLIST_AND_SCAN_PASS",
       "verification_status": "REVIEWED_CONTENT",
       "claim_category": "BOUNDED_PORTFOLIO_EVIDENCE",
