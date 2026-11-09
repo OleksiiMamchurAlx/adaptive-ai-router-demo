@@ -69,6 +69,24 @@
     <p>This example runs separately from the numeric demo. Its route state is in memory and resets for each batch.</p>
   </section>
 
+  <section class="panel" aria-labelledby="flow-benchmark">
+    <h2 id="flow-benchmark">Route flow and benchmark</h2>
+    <p>The Router validates the typed input, selects a route slot, runs the selected implementation and checks the ordered IDs against an exact reference before returning a receipt.</p>
+    <h3>Windows schedule comparison</h3>
+    <p>Each input size ran 640 synthetic calls per schedule through the same isolated in-process MCP tool. With 3:1 scheduling, the median and p95 were:</p>
+    <ul>
+      <li>32 items — 0.333 → 0.242 ms median, 0.451 → 0.403 ms p95.</li>
+      <li>128 items — 0.470 → 0.329 ms median, 0.610 → 0.547 ms p95.</li>
+      <li>1,000 items — 1.607 → 1.102 ms median, 1.942 → 1.861 ms p95.</li>
+    </ul>
+    <p>Measured-loop process CPU increased for 32 items and decreased for 128 and 1,000 items. Lifetime peak working sets were about 73 MiB under both schedules and include startup.</p>
+    <h3>Hosted schedule comparison</h3>
+    <p>Across 24 alternating-order pairs with four synthetic 128-item jobs per request, median round-trip latency went from 146.94 to 92.17 ms and p95 from 181.56 to 116.47 ms. Both schedules returned 96 exact results. Successful D1 reads dropped from two to one per request.</p>
+    <p>Worker elapsed time including D1 had a median of 100.5 ms under 1:1 and 49 ms under 3:1. CPU and memory figures come from the Windows process benchmark only. A separate built-in review confirmed eight versus four D1 reads across four pairs and left the policy unchanged.</p>
+    <p>The separate cloud planner checked input, admission, routing, execution, verification and receipt, then proposed a route without dispatching a task.</p>
+    <p><a href="./flow-benchmark.json">Download the benchmark summary</a></p>
+  </section>
+
   <section class="note" id="limits">
     <h2>Scope and limits</h2>
     <p>“Simulate interruption” injects a test-only stop after the numeric effect is committed, before validation. Resume starts a new browser worker and reuses that committed effect. It does not stop the installed Router. This page needs session storage and IndexedDB; it blocks an action if either cannot confirm its write. The browser can later evict or clear saved data; this is not Windows service recovery. Two tabs are serialized through Web Locks. No language model, provider key, account, analytics or server-side task storage is used.</p>

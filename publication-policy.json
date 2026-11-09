@@ -44,6 +44,7 @@
     "web/core/route_cells.py",
     "web/core/route_example.py",
     "web/core/tracking_core.py",
+    "web/flow-benchmark.json",
     "web/index.html",
     "web/page.js",
     "web/worker.js"
@@ -87,7 +88,8 @@
     "web/core/route_cells.py": "f7fdd426749f96cca4aa73757f20d0d4cc6d125ee15d3cc2d716ea25cc3620b8",
     "web/core/route_example.py": "29fcd7f5796ed91f39ec95e7c61a4fc92ade438cbc8a2047041685c8fd032809",
     "web/core/tracking_core.py": "6ce1789c2f663e6dfe71d0f69a649b7483516c9b2c1bcb856b185dfb13c696ca",
-    "web/index.html": "a0c9c5dff140ea902c35662c66c3edf3c53ff44342aabe34e6e6c5ffc96430dd",
+    "web/flow-benchmark.json": "e8b74bd2093a97f467b7ea5f827b303c1dc331f62ec7f9af60d26918262f8a9f",
+    "web/index.html": "4e1eacc3b81ba8adb7430081e6f935dcba6932d5e6224f1774fdfb8e8fcec5fd",
     "web/page.js": "327d6cc406ea1154c4e8715c1415b8af97df8dbcf427cef4d5ebc936849b6e8e",
     "web/worker.js": "d7987d2ef08b186c5ad01a8ed66115268bd055ef597235c2e953e79f5adf5cd4"
   },
@@ -123,7 +125,7 @@
     }
   },
   "authority": "Private AIQ reviewed configuration; candidate CI is not approval authority",
-  "rights_review": "Owner authorized only the exact bounded native-derived web subset and existing public demo on 2026-09-26; no blanket third-party provenance or extra open-source license is asserted. Pyodide 314.0.7 is loaded separately from its CDN under MPL-2.0. Owner authorized the exact tested deterministic route modules and fixed public example on 2026-11-08.",
+  "rights_review": "Owner authorized only the exact bounded native-derived web subset and existing public demo on 2026-09-26; no blanket third-party provenance or extra open-source license is asserted. Pyodide 314.0.7 is loaded separately from its CDN under MPL-2.0. Owner authorized the exact tested deterministic route modules and fixed public example on 2026-11-08. Owner authorized a sanitized summary of the synthetic Windows and hosted benchmark results on 2026-11-08.",
   "approved_research": {
     "schema_version": 1,
     "project_id": "future-unreal-automation-rd",
@@ -184,6 +186,7 @@
       "web/core/route_cells.py",
       "web/core/route_example.py",
       "web/core/tracking_core.py",
+      "web/flow-benchmark.json",
       "web/index.html",
       "web/page.js",
       "web/worker.js"
